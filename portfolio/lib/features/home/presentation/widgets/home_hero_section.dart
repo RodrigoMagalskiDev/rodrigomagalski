@@ -25,7 +25,7 @@ class HomeHeroSection extends StatelessWidget {
       children: [
         const HomeHeaderTexts(),
         const SizedBox(height: 20),
-        Image.asset('assets/images/mobile_dev.png', height: 260),
+        Image.asset('assets/images/mobile_dev.png', height: 150),
       ],
     );
   }

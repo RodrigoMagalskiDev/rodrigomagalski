@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:portfolio/core/utils/color_helper.dart';
+import 'package:portfolio/core/utils/responsive.dart';
 import 'package:portfolio/core/utils/screen_size_helper.dart';
 
 class AboutMe extends StatelessWidget {
@@ -9,7 +10,9 @@ class AboutMe extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 40),
+      padding: Responsive.isMobile(context)
+          ? EdgeInsets.zero
+          : EdgeInsets.symmetric(horizontal: 15, vertical: 40),
       child: Center(
         child: Column(
           children: [
@@ -19,35 +22,40 @@ class AboutMe extends StatelessWidget {
               'Desenvolvedor mobile apaixonado por criar experiências digitais excepcionais',
             ),
             SizedBox(height: 30),
-            Row(
-              mainAxisSize: MainAxisSize.min,
-              spacing: 40,
-              children: [
-                _buildCard(
-                  FontAwesomeIcons.medal,
-                  '4+',
-                  'Anos de Experiência',
-                  context,
-                ),
-                _buildCard(
-                  FontAwesomeIcons.arrowsSpin,
-                  '5+',
-                  'Áreas de Atuação',
-                  context,
-                ),
-                _buildCard(
-                  FontAwesomeIcons.medapps,
-                  '10+',
-                  'Tecnologias Dominadas',
-                  context,
-                ),
-              ],
+            SizedBox(
+              height: 200,
+              child: ListView(
+                shrinkWrap: true,
+                scrollDirection: Axis.horizontal,
+                children: [
+                  _buildCard(
+                    FontAwesomeIcons.medal,
+                    '4+',
+                    'Anos de Experiência',
+                    context,
+                  ),
+                  _buildCard(
+                    FontAwesomeIcons.arrowsSpin,
+                    '5+',
+                    'Áreas de Atuação',
+                    context,
+                  ),
+                  _buildCard(
+                    FontAwesomeIcons.medapps,
+                    '10+',
+                    'Tecnologias Dominadas',
+                    context,
+                  ),
+                ],
+              ),
             ),
             Padding(
               padding: const EdgeInsets.only(top: 50),
               child: Center(
                 child: SizedBox(
-                  width: context.w(.50),
+                  width: Responsive.isMobile(context)
+                      ? context.w(0.9)
+                      : context.w(0.5),
                   child: Card(
                     child: Padding(
                       padding: const EdgeInsets.all(25),
@@ -77,13 +85,17 @@ class AboutMe extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(20),
         child: SizedBox(
-          width: context.w(0.2),
+          width: Responsive.isMobile(context) ? context.w(0.4) : context.w(0.2),
           child: Column(
             children: [
               Center(
                 child: CircleAvatar(
-                  radius: 42,
-                  child: Icon(icon, size: 30, color: context.primaryColor),
+                  radius: Responsive.isMobile(context) ? 30 : 40,
+                  child: Icon(
+                    icon,
+                    size: Responsive.isMobile(context) ? 20 : 30,
+                    color: context.primaryColor,
+                  ),
                 ),
               ),
               SizedBox(height: 10),
@@ -91,12 +103,16 @@ class AboutMe extends StatelessWidget {
                 title,
                 style: TextStyle(
                   color: Colors.black,
-                  fontSize: 22,
+                  fontSize: Responsive.isMobile(context) ? 17 : 22,
                   fontWeight: FontWeight.bold,
                 ),
               ),
               SizedBox(height: 10),
-              Text(description, style: TextStyle(color: Colors.black)),
+              Text(
+                description,
+                style: TextStyle(color: Colors.black),
+                textAlign: TextAlign.center,
+              ),
             ],
           ),
         ),

@@ -15,10 +15,9 @@ class HomeHeaderTexts extends StatelessWidget {
           Text(
             'Desenvolvimento de Aplicativos',
             textAlign: TextAlign.center,
-            style: Theme.of(context)
-                .textTheme
-                .titleMedium!
-                .copyWith(fontSize: isMobile ? 24 : 50),
+            style: Theme.of(
+              context,
+            ).textTheme.titleMedium!.copyWith(fontSize: isMobile ? 24 : 50),
           ),
           const SizedBox(height: 16),
           const Text('Rodrigo Magalski Rubin', style: TextStyle(fontSize: 18)),
@@ -26,7 +25,7 @@ class HomeHeaderTexts extends StatelessWidget {
           Text(
             'Especializado em criar sites, sistemas e aplicativos mobile inovadores e intuitivos. Transformo ideias em produtos digitais que encantam usuários e impulsionam negócios.',
             textAlign: TextAlign.center,
-            style: TextStyle(fontSize: isMobile ? 16 : 20),
+            style: TextStyle(fontSize: isMobile ? 14 : 20),
           ),
         ],
       ),
