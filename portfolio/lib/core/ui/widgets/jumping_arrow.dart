@@ -9,8 +9,9 @@ class JumpingArrow extends StatefulWidget {
 
 class _JumpingArrowState extends State<JumpingArrow>
     with SingleTickerProviderStateMixin {
-  late AnimationController _controller;
-  late Animation<double> _animation;
+  late final AnimationController _controller;
+  late final Animation<double> _fade;
+  late final Animation<double> _offset;
 
   @override
   void initState() {
@@ -18,12 +19,17 @@ class _JumpingArrowState extends State<JumpingArrow>
 
     _controller = AnimationController(
       vsync: this,
-      duration: Duration(seconds: 1),
+      duration: const Duration(milliseconds: 900),
     )..repeat(reverse: true);
 
-    _animation = Tween<double>(
-      begin: 0,
-      end: 12,
+    _fade = Tween<double>(
+      begin: 0.4,
+      end: 1,
+    ).animate(CurvedAnimation(parent: _controller, curve: Curves.easeInOut));
+
+    _offset = Tween<double>(
+      begin: -8,
+      end: 8,
     ).animate(CurvedAnimation(parent: _controller, curve: Curves.easeInOut));
   }
 
@@ -35,18 +41,25 @@ class _JumpingArrowState extends State<JumpingArrow>
 
   @override
   Widget build(BuildContext context) {
-    return AnimatedBuilder(
-      animation: _controller,
-      builder: (_, child) {
-        return Padding(
-          padding: EdgeInsets.only(bottom: _animation.value),
-          child: Opacity(
-            opacity: 0.5 + (_controller.value * 0.5),
-            child: child,
-          ),
-        );
-      },
-      child: Icon(Icons.keyboard_arrow_down, size: 48, color: Colors.white),
+    return SizedBox(
+      height: 60,
+      child: AnimatedBuilder(
+        animation: _controller,
+        child: const Icon(
+          Icons.keyboard_arrow_down,
+          size: 48,
+          color: Colors.white,
+        ),
+        builder: (_, child) {
+          return Opacity(
+            opacity: _fade.value,
+            child: Transform.translate(
+              offset: Offset(0, _offset.value),
+              child: child,
+            ),
+          );
+        },
+      ),
     );
   }
 }

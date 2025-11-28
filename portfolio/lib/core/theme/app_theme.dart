@@ -17,13 +17,17 @@ class AppTheme {
           fontWeight: FontWeight.w900,
           color: Colors.white,
         ),
+        titleLarge: GoogleFonts.montserrat(
+          fontWeight: FontWeight.w500,
+          color: Colors.white,
+        ),
         bodyMedium: GoogleFonts.montserrat(
           fontWeight: FontWeight.w400,
           color: Colors.white,
         ),
       ),
       appBarTheme: AppBarTheme(
-        backgroundColor: Colors.transparent,
+        backgroundColor: Color(0xFF1b4c6f),
         foregroundColor: Colors.white,
         elevation: 0,
         surfaceTintColor: Colors.transparent,
@@ -36,6 +40,15 @@ class AppTheme {
           foregroundColor: Colors.black,
           textStyle: GoogleFonts.montserrat(fontWeight: FontWeight.w600),
         ),
+      ),
+      inputDecorationTheme: InputDecorationTheme(
+        border: OutlineInputBorder(borderRadius: BorderRadius.circular(8)),
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(8),
+          borderSide: BorderSide(color: Colors.blue.shade700, width: 2),
+        ),
+        labelStyle: GoogleFonts.montserrat(),
+        hintStyle: GoogleFonts.montserrat(),
       ),
     );
   }

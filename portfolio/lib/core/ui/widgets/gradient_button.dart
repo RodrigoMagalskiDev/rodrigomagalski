@@ -4,12 +4,16 @@ class GradientButton extends StatelessWidget {
   final VoidCallback onPressed;
   final bool filled;
   final String title;
+  final double? width;
+  final EdgeInsetsGeometry? padding;
 
   const GradientButton({
     super.key,
     required this.onPressed,
     required this.filled,
     required this.title,
+    this.width,
+    this.padding,
   });
 
   @override
@@ -30,7 +34,9 @@ class GradientButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(30),
           onTap: onPressed,
           child: Container(
-            padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 32),
+            width: width,
+            padding: padding ??
+                const EdgeInsets.symmetric(vertical: 10, horizontal: 32),
             alignment: Alignment.center,
             child: Text(
               title,
