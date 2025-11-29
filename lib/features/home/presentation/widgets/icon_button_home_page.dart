@@ -17,9 +17,9 @@ class IconButtonHomePage extends StatelessWidget {
   }
 
   Future<void> openUrl() async {
-    final _url = Uri.parse(url);
-    if (!await launchUrl(_url, webOnlyWindowName: "_blank")) {
-      throw 'Could not launch $_url';
+    final urlParsed = Uri.parse(url);
+    if (!await launchUrl(urlParsed, webOnlyWindowName: "_blank")) {
+      throw 'Could not launch $urlParsed';
     }
   }
 }

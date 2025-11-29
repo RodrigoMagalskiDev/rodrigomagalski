@@ -10,6 +10,7 @@ import 'widgets/about_me.dart';
 import 'widgets/home_hero_section.dart';
 import 'widgets/home_cta_buttons.dart';
 import 'widgets/home_social_links.dart';
+import '../../projects/presentation/widgets/projects_list.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -146,6 +147,10 @@ class _HomePageState extends State<HomePage> {
                           const HomeSocialLinks(),
                           SizedBox(height: 60),
                           Center(child: const JumpingArrow()),
+                          KeyedSubtree(
+                            key: _projectsKey,
+                            child: const ProjectsList(),
+                          ),
                           KeyedSubtree(
                             key: _aboutMeKey,
                             child: const AboutMe(),
