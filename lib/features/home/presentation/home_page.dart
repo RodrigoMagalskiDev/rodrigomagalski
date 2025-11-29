@@ -37,11 +37,51 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
+  Widget _buildDrawerMenu() {
+    return Drawer(
+      child: SafeArea(
+        child: ListView(
+          padding: const EdgeInsets.symmetric(vertical: 8),
+          children: [
+            ListTile(
+              title: const Text('Sobre'),
+              onTap: () {
+                Navigator.of(context).pop();
+                scrollToSection(_aboutMeKey);
+              },
+            ),
+            ListTile(
+              title: const Text('Projetos'),
+              onTap: () {
+                Navigator.of(context).pop();
+                scrollToSection(_projectsKey);
+              },
+            ),
+            ListTile(
+              title: const Text('Habilidades'),
+              onTap: () {
+                Navigator.of(context).pop();
+                scrollToSection(_skillsKey);
+              },
+            ),
+            ListTile(
+              title: const Text('Contato'),
+              onTap: () {
+                Navigator.of(context).pop();
+                scrollToSection(_contactKey);
+              },
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       extendBodyBehindAppBar: true,
-      endDrawer: Drawer(),
+      endDrawer: _buildDrawerMenu(),
       appBar: AppBar(
         title: InkWell(
           onTap: () => scrollToSection(_homeKey),
@@ -99,7 +139,10 @@ class _HomePageState extends State<HomePage> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           const HomeHeroSection(),
-                          const HomeCtaButtons(),
+                          HomeCtaButtons(
+                            onViewProjects: () => scrollToSection(_projectsKey),
+                            onContact: () => scrollToSection(_contactKey),
+                          ),
                           const HomeSocialLinks(),
                           SizedBox(height: 60),
                           Center(child: const JumpingArrow()),

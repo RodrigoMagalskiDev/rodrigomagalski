@@ -3,12 +3,19 @@ import '../../../../core/utils/responsive.dart';
 import '../../../../core/ui/widgets/gradient_button.dart';
 
 class HomeCtaButtons extends StatelessWidget {
-  const HomeCtaButtons({super.key});
+  final VoidCallback onViewProjects;
+  final VoidCallback onContact;
+  const HomeCtaButtons({
+    super.key,
+    required this.onViewProjects,
+    required this.onContact,
+  });
 
   @override
   Widget build(BuildContext context) {
     final isMobile = Responsive.isMobile(context);
-    final isWide = Responsive.isTablet(context) || Responsive.isDesktop(context);
+    final isWide =
+        Responsive.isTablet(context) || Responsive.isDesktop(context);
     final btnWidth = isWide ? 220.0 : null;
     final btnPadding = isWide
         ? const EdgeInsets.symmetric(vertical: 10, horizontal: 16)
@@ -20,7 +27,7 @@ class HomeCtaButtons extends StatelessWidget {
         children: [
           GradientButton(
             filled: true,
-            onPressed: () {},
+            onPressed: onViewProjects,
             title: 'Ver Projetos',
             width: btnWidth,
             padding: btnPadding,
@@ -28,7 +35,7 @@ class HomeCtaButtons extends StatelessWidget {
           const SizedBox(height: 16),
           GradientButton(
             filled: false,
-            onPressed: () {},
+            onPressed: onContact,
             title: 'Entrar em Contato',
             width: btnWidth,
             padding: btnPadding,
@@ -43,7 +50,7 @@ class HomeCtaButtons extends StatelessWidget {
       children: [
         GradientButton(
           filled: true,
-          onPressed: () {},
+          onPressed: onViewProjects,
           title: 'Ver Projetos',
           width: btnWidth,
           padding: btnPadding,
@@ -51,7 +58,7 @@ class HomeCtaButtons extends StatelessWidget {
         const SizedBox(width: 16),
         GradientButton(
           filled: false,
-          onPressed: () {},
+          onPressed: onContact,
           title: 'Entrar em Contato',
           width: btnWidth,
           padding: btnPadding,
