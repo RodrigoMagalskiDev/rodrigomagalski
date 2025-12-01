@@ -885,7 +885,7 @@ m.l()
 a.l()
 return l},
 aJK(a){var s,r,q,p,o,n,m
-$label0$0:for(s=a.length,r=0;r<6;++r){q=B.FJ[r]
+$label0$0:for(s=a.length,r=0;r<6;++r){q=B.FK[r]
 p=q.c
 o=p.length
 if(s<o)continue $label0$0
@@ -20416,7 +20416,7 @@ if(a.as!==q)return q?-1:1
 return 0},
 aBC(a,b){var s=A.Z(b).i("a4<1,cZ>")
 s=A.Y(new A.a4(b,new A.Zp(),s),s.i("ax.E"))
-return A.aBc(!0,s,a,B.GS,!0,B.Cr,null)},
+return A.aBc(!0,s,a,B.GQ,!0,B.Cr,null)},
 aBA(a){a.bv()
 a.b1(A.aww())},
 wT(a){var s=a.a,r=s instanceof A.nI?s:null
@@ -20998,7 +20998,7 @@ _.as=!0
 _.at=!1
 _.$ti=d},
 aoi(a,b){var s
-if(a.j(0,b))return new A.Gt(B.GU)
+if(a.j(0,b))return new A.Gt(B.GS)
 s=A.b([],t.fJ)
 A.bn("debugDidFindAncestor")
 a.kA(new A.a1s(b,A.aw(t.u),s))
@@ -21363,7 +21363,7 @@ t.Dn.a(a)
 s=J.bw(a)
 r=s.h(a,0)
 r.toString
-switch(B.FS[A.ef(r)].a){case 0:s=s.fC(a,1)
+switch(B.FT[A.ef(r)].a){case 0:s=s.fC(a,1)
 r=s[0]
 r.toString
 A.ef(r)
@@ -25542,7 +25542,7 @@ gDx(){return B.c_},
 $ihz:1}
 A.ql.prototype={
 ga7W(){var s,r,q=new Float32Array(20)
-for(s=this.a,r=0;r<20;++r)if(B.b.v(B.FH,r))q[r]=s[r]/255
+for(s=this.a,r=0;r<20;++r)if(B.b.v(B.FI,r))q[r]=s[r]/255
 else q[r]=s[r]
 return q},
 qg(){return $.b1.b3().ColorFilter.MakeMatrix(this.ga7W())},
@@ -27203,7 +27203,7 @@ gB(a){var s=this,r=s.b,q=r!=null?A.bl(r):null
 return A.I(s.a,q,s.c,s.d,s.e,s.x,s.f,s.r,s.w,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)}}
 A.X_.prototype={
 GQ(a,b,c,d){var s,r,q,p
-if(a<0||b<0)return B.GT
+if(a<0||b<0)return B.GR
 s=this.a
 s===$&&A.a()
 s=s.a
@@ -28738,7 +28738,7 @@ if(f.b){q=t.f
 e=q.a(q.a(B.bH.fg(a1)).h(0,"data"))
 d=A.ct(e.h(0,"message"))
 if(d!=null&&d.length!==0){c=A.IM(e,"assertiveness")
-f.a.PJ(d,B.G6[c==null?0:c])}}b.er(a2,B.bH.bW(!0))
+f.a.PJ(d,B.G5[c==null?0:c])}}b.er(a2,B.bH.bW(!0))
 return
 case"flutter/navigation":q=t.e8
 if(q.a(b.gcD().b.h(0,0))!=null)q.a(b.gcD().b.h(0,0)).EY(a1).by(new A.ZN(b,a2),t.P)
@@ -30843,14 +30843,14 @@ a3f(){var s=this,r=s.r
 if(r==null){r=s.r=new A.vl(s.c)
 r.d=new A.ZY(s)}return r},
 G7(a){var s,r=this
-if(B.b.v(B.He,a.type)){s=r.a3f()
+if(B.b.v(B.Hd,a.type)){s=r.a3f()
 s.toString
 s.sE9(r.c.$0().A3(5e5))
 if(r.f!==B.mI){r.f=B.mI
 r.Mg()}}return r.d.a.Vy(a)},
 Mg(){var s,r
 for(s=this.w,r=0;r<s.length;++r)s[r].$1(this.f)},
-Vv(a){if(B.b.v(B.GF,a))return this.f===B.fN
+Vv(a){if(B.b.v(B.GE,a))return this.f===B.fN
 return!1}}
 A.ZZ.prototype={
 $0(){return new A.fm(Date.now(),0,!1)},
@@ -36286,7 +36286,7 @@ if(o>0)return s
 return null}}
 A.adH.prototype={
 E(a,b){this.JQ(b,0,b.length,!1)},
-b6(){this.JQ(B.GK,0,0,!0)}}
+b6(){this.JQ(B.GI,0,0,!0)}}
 A.alh.prototype={
 JQ(a,b,c,d){var s=this.b.afL(a,b,c,d)
 if(s!=null)this.a.mt(s,0,s.length,d)}}
@@ -38234,7 +38234,7 @@ h=r[4]
 g=r[5]
 f=r[6]
 e=r[7]
-for(d=l,q=0;q<64;++q,e=f,f=g,g=h,h=b,i=j,j=k,k=d,d=a){c=(e+(((h>>>6|h<<26)^(h>>>11|h<<21)^(h>>>25|h<<7))>>>0)>>>0)+(((h&g^~h&f)>>>0)+(B.Gc[q]+s[q]>>>0)>>>0)>>>0
+for(d=l,q=0;q<64;++q,e=f,f=g,g=h,h=b,i=j,j=k,k=d,d=a){c=(e+(((h>>>6|h<<26)^(h>>>11|h<<21)^(h>>>25|h<<7))>>>0)>>>0)+(((h&g^~h&f)>>>0)+(B.Gb[q]+s[q]>>>0)>>>0)>>>0
 b=i+c>>>0
 a=c+((((d>>>2|d<<30)^(d>>>13|d<<19)^(d>>>22|d<<10))>>>0)+((d&k^d&j^k&j)>>>0)>>>0)>>>0}r.$flags&2&&A.ak(r)
 r[0]=d+l>>>0
@@ -42409,7 +42409,7 @@ n=o.e
 o=o.cx
 r=q.ga7h()
 q.a.toString
-return new A.B8(p,p,p,new A.ahr(),p,p,p,p,p,n,B.IY,p,p,p,B.GL,q.ga7o(),o,p,B.Qh,s,p,r,p,p,B.n1,!1,!1,p,p,p,new A.nV(q,t.bT))},
+return new A.B8(p,p,p,new A.ahr(),p,p,p,p,p,n,B.IY,p,p,p,B.GJ,q.ga7o(),o,p,B.Qh,s,p,r,p,p,B.n1,!1,!1,p,p,p,new A.nV(q,t.bT))},
 J(a){var s,r=null,q=A.nK(!1,!1,this.a0f(a),r,r,r,r,!0,r,r,r,new A.ahs(),r,r)
 this.a.toString
 s=this.d
@@ -43551,7 +43551,7 @@ A.aiD.prototype={
 $2(a,b){return this.a.u$.bS(a,this.b)},
 $S:11}
 A.Ny.prototype={
-gzw(){return B.Gb},
+gzw(){return B.G9},
 DM(a){var s
 switch(a.a){case 0:s=this.d.b
 break
@@ -46733,7 +46733,7 @@ A.aiR.prototype={
 $2(a,b){return this.a.bS(a,b)},
 $S:11}
 A.Of.prototype={
-gzw(){return B.Gf},
+gzw(){return B.Ge},
 DM(a){var s,r=this
 switch(a.a){case 0:s=r.d.as
 break
@@ -47665,7 +47665,7 @@ r.e=s.a.a
 r.f=s.d},
 $S:0}
 A.J9.prototype={
-J(a){return A.ato(new A.ld(B.BJ,null,null),B.R,new A.rl(1,B.H0,new A.cj(B.zn,B.q)),this.c.S(0,new A.h(0,40.95)),1.25,B.NC)}}
+J(a){return A.ato(new A.ld(B.BJ,null,null),B.R,new A.rl(1,B.H_,new A.cj(B.zn,B.q)),this.c.S(0,new A.h(0,40.95)),1.25,B.NC)}}
 A.ol.prototype={
 F(){return"MaterialType."+this.b}}
 A.y7.prototype={
@@ -53118,7 +53118,7 @@ s=p.a.getGlyphPositionAtCoordinate(o.a,o.b)
 r=B.Gr[J.a8(s.affinity.value)]
 return new A.ab(J.a8(s.pos),r)},
 ra(){var s,r,q=this.b,p=q.ghz()
-if(!isFinite(p.a)||!isFinite(p.b))return B.GW
+if(!isFinite(p.a)||!isFinite(p.b))return B.GU
 s=q.f
 if(s==null){s=q.a.c.ra()
 q.f=s}if(p.j(0,B.e))r=s
@@ -62248,7 +62248,7 @@ break
 case 1:return A.M(q,r)}})
 return A.N($async$Bp,r)},
 a2Z(a,b){var s,r,q,p
-if(a===b)return B.GQ
+if(a===b)return B.GO
 s=A.b([],t.QP)
 if(a==null)s.push(b)
 else{r=B.b.kk(B.eh,a)
@@ -64105,7 +64105,7 @@ A.kd.prototype={}
 A.JX.prototype={
 kp(a,b){var s,r,q,p,o,n=$.a1.K$.d.c
 if(n==null||n.e==null)return!1
-for(s=t.J,r=0;r<2;++r){q=B.GG[r]
+for(s=t.J,r=0;r<2;++r){q=B.GF[r]
 p=n.e
 p.toString
 o=A.ant(p,q,s)
@@ -64217,7 +64217,7 @@ this.hf()}}
 A.mA.prototype={
 k(a){return"Entry#"+A.bi(this)+"("+this.d.k(0)+")"}}
 A.vt.prototype={
-am(){return new A.Bf(A.aw(t.me),B.GX,null,null)},
+am(){return new A.Bf(A.aw(t.me),B.GV,null,null)},
 aln(a,b){return this.w.$2(a,b)},
 aiv(a,b){return A.aJ_().$2(a,b)}}
 A.Bf.prototype={
@@ -65870,7 +65870,7 @@ q.aM$.E(0,s.ga7Z())
 s.e=q}return q},
 gLV(){var s=this.f
 if(s===$){s!==$&&A.a0()
-s=this.f=new A.afm(1,B.G1,B.bC)}return s},
+s=this.f=new A.afm(1,B.G2,B.bC)}return s},
 gfG(){var s=this.z
 s=s==null?null:$.bI().d===s
 return s===!0},
@@ -66533,7 +66533,7 @@ h.D2()
 r=h.ga3I()
 q=q.oQ
 h.e!==$&&A.b8()
-h.e=new A.La(s,new A.c9(B.IK,l),new A.oh(),p,B.bZ,0,k,h.ga5J(),h.ga5L(),r,B.bZ,0,j,h.ga5D(),h.ga5F(),r,i,B.GV,f,g.CW,g.cx,g.cy,o,g,n,m,g.x,q,new A.H1(),new A.H1())
+h.e=new A.La(s,new A.c9(B.IK,l),new A.oh(),p,B.bZ,0,k,h.ga5J(),h.ga5L(),r,B.bZ,0,j,h.ga5D(),h.ga5F(),r,i,B.GT,f,g.CW,g.cx,g.cy,o,g,n,m,g.x,q,new A.H1(),new A.H1())
 return h},
 v5(a,b){var s,r,q,p=this,o=p.a.c,n=o.a.a.length
 if(n<a.b||n<a.a)return
@@ -70097,7 +70097,7 @@ if(b==null)return!1
 if(J.J(b)!==A.p(s))return!1
 return b instanceof A.hI&&b.a===s.a&&b.b==s.b&&b.c==s.c&&b.d===s.d&&A.bY(null,null)},
 gB(a){var s=this
-return A.I(s.a,s.b,s.c,s.d,A.bl(B.GR),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
+return A.I(s.a,s.b,s.c,s.d,A.bl(B.GP),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
 k(a){return"IconData(U+"+B.d.tw(B.i.lS(this.a,16).toUpperCase(),5,"0")+")"}}
 A.o0.prototype={
 cc(a){return!this.w.j(0,a.w)},
@@ -71122,7 +71122,7 @@ g=s&&d
 b=s?d:b.ch
 if(b==null)b=B.dq
 s=s&&d
-f=new A.ye(a,a1,q,p,m,o,n,a0,g===!0,l,k,h,c,j,i,b,new A.qF(d),B.GO,s===!0)
+f=new A.ye(a,a1,q,p,m,o,n,a0,g===!0,l,k,h,c,j,i,b,new A.qF(d),B.GM,s===!0)
 if(!f.j(0,e.e))e.ap(new A.ahJ(e,f))},
 El(){this.qM()},
 QU(){if(this.d==null)this.qM()},
@@ -71442,7 +71442,7 @@ r.a_(0,s.TQ(null,l))
 l.a.toString
 q=r.a
 p=0
-for(;!1;++p){o=B.GM[p]
+for(;!1;++p){o=B.GK[p]
 n=l.c
 n.toString
 m=new A.fO(o.E2(n),null,!0,B.kX,B.bJ,new A.pR(new ($.Vh())(B.bJ)),B.bJ)
@@ -71788,7 +71788,7 @@ J(a){var s,r,q=this,p=null,o=q.ga5h(),n=A.lp(a),m=q.be$,l=q.d
 l===$&&A.a()
 s=q.a.ay
 if(l.gI()==null){r=q.gIT()
-r=J.o6(r.slice(0),A.Z(r).c)}else r=B.GN
+r=J.o6(r.slice(0),A.Z(r).c)}else r=B.GL
 return new A.nZ(p,new A.d1(new A.a5P(q,a),A.xZ(B.bw,new A.FO(!1,A.ao_(A.nK(!0,p,A.B2(m,new A.ry(r,s,l)),p,p,p,q.y,!1,p,p,p,p,p,!0),n),p),o,q.ga7P(),p,p,o),p,t.w3),p)}}
 A.a5O.prototype={
 $1(a){var s=this.a.c
@@ -77045,7 +77045,7 @@ r.w0()
 return s.aT()},
 l(){var s,r,q,p,o=this
 for(s=o.b,r=s.length,q=o.gBr(),p=0;p<s.length;s.length===r||(0,A.B)(s),++p)s[p].H(q)
-o.b=B.GP
+o.b=B.GN
 o.y=!1
 o.d_()},
 dI(a,b){return a.lk(b)},
@@ -81504,7 +81504,7 @@ a01(){var s=this,r=null
 return new A.HB(A.zw(!0,A.asB(A.b([A.J_(r,new A.agk(s),r,B.T1),A.J_(r,new A.agl(s),r,B.SY),A.J_(r,new A.agm(s),r,B.T2),A.J_(r,new A.agn(s),r,B.SZ)],t.p),B.D3,B.aH,!1),B.aQ,!0),r)},
 J(a){var s=this,r=null,q=s.a01(),p=A.xz(!1,r,!0,B.SX,r,!0,r,r,r,r,r,r,r,r,new A.ago(s),r,r,r,r,r,r,r),o=t.w,n=t.p,m=A.av(a,r,o).w.a.a>=1100?A.b([new A.or("Sobre",new A.agp(s),r),new A.or("Projetos",new A.agq(s),r),new A.or("Habilidades",new A.agr(s),r),new A.or("Contato",new A.ags(s),r)],n):A.b([],n),l=A.b([0,2],t.n),k=s.d
 o=A.av(a,r,o).w.a.a<600?new A.ag(12,15,12,15):new A.ag(100,130,100,130)
-return new A.zx(!0,new A.vD(p,m,new A.QN(r,r,1/0,56),B.D_,r),A.hB(r,A.atG(A.zw(!0,A.atM(A.dJ(A.b([new A.bs(o,A.hB(r,A.dJ(A.b([B.E_,new A.Ig(new A.agt(s),new A.agu(s),r),B.E1,A.c7(r,60,r),A.hy(B.F5,r,r),new A.f6(B.z0,s.f),new A.f6(B.Ld,s.r),new A.f6(new A.Lx(r),s.w),new A.f6(B.BQ,s.x)],n),B.bc,B.W,B.a4,0),B.x,r,r,r,r,r,s.e,r,r,r,r,r),r),A.hB(r,A.tN(B.yJ,A.b([A.bN("Desenvolvido com Flutter por Rodrigo Magalski Rubin",r,r,r,A.d4(r,r,A.U(a).ax.b,r,r,r,r,r,r,r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.bN("\xa9 2025 Todos os direitos reservados",r,r,r,A.d4(r,r,A.U(a).ax.b,r,r,r,r,r,r,r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r),r,r)],n),B.cn,0,0),B.x,B.k,r,r,r,r,r,r,new A.ag(0,15,0,15),r,r,1/0)],n),B.a8,B.W,B.a4,0),k),B.aQ,!0),k,10,!0),B.x,r,r,new A.da(r,r,r,r,r,new A.oN(B.a7,1,B.c_,r,0,B.H5,l,new A.Ia(2)),B.aW),r,r,r,r,r,r,r,r),q,r)}}
+return new A.zx(!0,new A.vD(p,m,new A.QN(r,r,1/0,56),B.D_,r),A.hB(r,A.atG(A.zw(!0,A.atM(A.dJ(A.b([new A.bs(o,A.hB(r,A.dJ(A.b([B.E_,new A.Ig(new A.agt(s),new A.agu(s),r),B.E1,A.c7(r,60,r),A.hy(B.F5,r,r),new A.f6(B.z0,s.f),new A.f6(B.Ld,s.r),new A.f6(new A.Lx(r),s.w),new A.f6(B.BQ,s.x)],n),B.bc,B.W,B.a4,0),B.x,r,r,r,r,r,s.e,r,r,r,r,r),r),A.hB(r,A.tN(B.yJ,A.b([A.bN("Desenvolvido com Flutter por Rodrigo Magalski Rubin",r,r,r,A.d4(r,r,A.U(a).ax.b,r,r,r,r,r,r,r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.bN("\xa9 2025 Todos os direitos reservados",r,r,r,A.d4(r,r,A.U(a).ax.b,r,r,r,r,r,r,r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r),r,r)],n),B.cn,0,0),B.x,B.k,r,r,r,r,r,r,new A.ag(0,15,0,15),r,r,1/0)],n),B.a8,B.W,B.a4,0),k),B.aQ,!0),k,10,!0),B.x,r,r,new A.da(r,r,r,r,r,new A.oN(B.a7,1,B.c_,r,0,B.H4,l,new A.Ia(2)),B.aW),r,r,r,r,r,r,r,r),q,r)}}
 A.agk.prototype={
 $0(){var s=this.a,r=s.c
 r.toString
@@ -81567,7 +81567,7 @@ o=A.c7(s,10,s)
 return A.qf(new A.bs(B.mj,A.c7(A.dJ(A.b([p,o,A.bN(b,s,s,s,A.d4(s,s,B.l,s,s,s,s,s,s,s,s,A.av(d,s,r).w.a.a<600?17:22,s,s,B.bN,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.c7(s,10,s),A.bN(c,s,s,s,A.d4(s,s,B.l,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),B.br,s)],t.p),B.a8,B.W,B.a4,0),s,q),s),s,s)}}
 A.Gv.prototype={
 J(a){var s=null,r=A.av(a,s,t.w).w.a.a<600?new A.ag(8,8,8,8):new A.ag(16,16,16,16)
-return A.c7(A.qf(new A.bs(r,A.dJ(B.Ge,B.bc,B.W,B.a4,13),s),s,s),360,s)}}
+return A.c7(A.qf(new A.bs(r,A.dJ(B.Gd,B.bc,B.W,B.a4,13),s),s,s),360,s)}}
 A.wc.prototype={
 am(){var s=$.an()
 return new A.BA(new A.bd(null,t.am),new A.pf(B.eM,s),new A.pf(B.eM,s),new A.pf(B.eM,s),new A.pf(B.eM,s))}}
@@ -81625,7 +81625,7 @@ J(a){var s=null,r="assets/images/mobile_dev.png"
 if(A.av(a,s,t.w).w.a.a>=1100)return A.rV(A.b([B.Ds,B.NF,A.a_2(A.aoe(r,s,B.db,s,380),2)],t.p),B.a8,B.W,B.a4,0)
 return A.dJ(A.b([B.mK,B.NJ,A.aoe(r,s,B.db,s,150)],t.p),B.a8,B.W,B.a4,0)}}
 A.Ij.prototype={
-J(a){return new A.bs(B.D4,A.rV(B.Hb,B.a8,B.W,B.a4,10),null)}}
+J(a){return new A.bs(B.D4,A.rV(B.Ha,B.a8,B.W,B.a4,10),null)}}
 A.xl.prototype={
 J(a){var s=null
 return A.aob(s,s,A.IC(this.c,B.k,s,s),s,s,new A.a15(this),s,s,s)},
@@ -81738,7 +81738,7 @@ J(a){var s,r,q,p=null,o=t.w,n=A.av(a,p,o).w.a.a<600?A.av(a,p,o).w.a.a*0.9:A.av(a
 o=A.av(a,p,o).w.a.a<600?B.Dl:B.Di
 s=A.bN("Projetos",p,p,p,A.U(a).ok.r,B.br,p)
 r=A.bN("Alguns dos trabalhos desenvolvidos recentemente",p,p,p,p,B.br,p)
-q=A.Y(new A.a4(B.Hf,new A.a6T(n),t.pF),t.l7)
+q=A.Y(new A.a4(B.Gl,new A.a6T(n),t.pF),t.l7)
 return A.c7(new A.bs(o,A.dJ(A.b([s,r,A.tN(B.kM,q,B.cn,24,24)],t.p),B.a8,B.W,B.a4,24),p),p,1/0)}}
 A.a6T.prototype={
 $1(a){return A.c7(new A.yR(a.a,a.b,a.c,a.d,null),null,this.a)},
@@ -84789,9 +84789,9 @@ B.ii=new A.a5(1/0,1/0,1/0,1/0)
 B.BC=new A.D(0.23529411764705882,0,0,0,B.h)
 B.JF=new A.h(0,4)
 B.zG=new A.dI(0.5,B.f2,B.BC,B.JF,10)
-B.GE=A.b(s([B.zG]),t.sq)
+B.GD=A.b(s([B.zG]),t.sq)
 B.aW=new A.Gk(0,"rectangle")
-B.zA=new A.da(null,null,null,B.ih,B.GE,null,B.aW)
+B.zA=new A.da(null,null,null,B.ih,B.GD,null,B.aW)
 B.zB=new A.Gh(1,"contain")
 B.zC=new A.Gh(6,"scaleDown")
 B.dL=new A.vR(0,"tight")
@@ -85025,7 +85025,7 @@ B.AF=new A.act()
 B.ai=new A.acw()
 B.cv=new A.acy()
 B.dE=new A.Mt(0,0,0,0)
-B.GO=A.b(s([]),A.al("z<aLt>"))
+B.GM=A.b(s([]),A.al("z<aLt>"))
 B.W1=new A.acH()
 B.b8={}
 B.t3=new A.bz(B.b8,[],t.li)
@@ -85605,29 +85605,29 @@ B.Fg=new A.of(2,"top")
 B.mZ=new A.of(3,"center")
 B.Fh=new A.of(4,"bottom")
 B.n_=A.b(s(["text","multiline","number","phone","datetime","emailAddress","url","visiblePassword","name","address","none","webSearch","twitter"]),t.s)
-B.FH=A.b(s([4,9,14,19]),t.t)
-B.H6=A.b(s([137,80,78,71,13,10,26,10]),t.Z)
+B.FI=A.b(s([4,9,14,19]),t.t)
+B.H5=A.b(s([137,80,78,71,13,10,26,10]),t.Z)
 B.Er=new A.lx(0,"png")
 B.Ez=new A.iB(B.Er,!1,0,"png")
-B.Ep=new A.jW(B.H6,B.Ez,0,"png")
-B.H7=A.b(s([71,73,70,56,55,97]),t.Z)
-B.Eo=new A.jW(B.H7,B.fQ,1,"gif87a")
+B.Ep=new A.jW(B.H5,B.Ez,0,"png")
+B.H6=A.b(s([71,73,70,56,55,97]),t.Z)
+B.Eo=new A.jW(B.H6,B.fQ,1,"gif87a")
 B.Gz=A.b(s([71,73,70,56,57,97]),t.Z)
 B.En=new A.jW(B.Gz,B.fQ,2,"gif89a")
-B.Fl=A.b(s([255,216,255]),t.Z)
+B.Fm=A.b(s([255,216,255]),t.Z)
 B.Es=new A.lx(2,"jpeg")
 B.ED=new A.iB(B.Es,!1,3,"jpeg")
-B.Eq=new A.jW(B.Fl,B.ED,3,"jpeg")
-B.G0=A.b(s([82,73,70,70,null,null,null,null,87,69,66,80]),t.Z)
-B.Em=new A.jW(B.G0,B.mQ,4,"webp")
-B.FV=A.b(s([66,77]),t.Z)
+B.Eq=new A.jW(B.Fm,B.ED,3,"jpeg")
+B.G1=A.b(s([82,73,70,70,null,null,null,null,87,69,66,80]),t.Z)
+B.Em=new A.jW(B.G1,B.mQ,4,"webp")
+B.FW=A.b(s([66,77]),t.Z)
 B.Et=new A.lx(4,"bmp")
 B.EB=new A.iB(B.Et,!1,6,"bmp")
-B.El=new A.jW(B.FV,B.EB,5,"bmp")
-B.FJ=A.b(s([B.Ep,B.Eo,B.En,B.Eq,B.Em,B.El]),A.al("z<jW>"))
+B.El=new A.jW(B.FW,B.EB,5,"bmp")
+B.FK=A.b(s([B.Ep,B.Eo,B.En,B.Eq,B.Em,B.El]),A.al("z<jW>"))
 B.kZ=new A.Du(0,"named")
 B.yX=new A.Du(1,"anonymous")
-B.FS=A.b(s([B.kZ,B.yX]),A.al("z<Du>"))
+B.FT=A.b(s([B.kZ,B.yX]),A.al("z<Du>"))
 B.n0=A.b(s([0,4,12,1,5,13,3,7,15]),t.t)
 B.V0=new A.ff(0,1)
 B.V5=new A.ff(0.5,1)
@@ -85640,7 +85640,7 @@ B.V9=new A.ff(0.8875,0.25)
 B.V7=new A.ff(0.925,0.5)
 B.V1=new A.ff(0.9625,0.75)
 B.V2=new A.ff(1,1)
-B.G1=A.b(s([B.V0,B.V5,B.V8,B.Va,B.V6,B.V4,B.V3,B.V9,B.V7,B.V1,B.V2]),A.al("z<ff>"))
+B.G2=A.b(s([B.V0,B.V5,B.V8,B.Va,B.V6,B.V4,B.V3,B.V9,B.V7,B.V1,B.V2]),A.al("z<ff>"))
 B.eL=new A.kr(0,"left")
 B.kt=new A.kr(1,"right")
 B.br=new A.kr(2,"center")
@@ -85648,12 +85648,12 @@ B.hE=new A.kr(3,"justify")
 B.aT=new A.kr(4,"start")
 B.ku=new A.kr(5,"end")
 B.G3=A.b(s([B.eL,B.kt,B.br,B.hE,B.aT,B.ku]),A.al("z<kr>"))
-B.G6=A.b(s([B.ic,B.id]),A.al("z<vF>"))
+B.G5=A.b(s([B.ic,B.id]),A.al("z<vF>"))
 B.b3=new A.ja(0,"label")
 B.aK=new A.ja(1,"avatar")
 B.bE=new A.ja(2,"deleteIcon")
-B.Gb=A.b(s([B.b3,B.aK,B.bE]),A.al("z<ja>"))
-B.Gc=A.b(s([1116352408,1899447441,3049323471,3921009573,961987163,1508970993,2453635748,2870763221,3624381080,310598401,607225278,1426881987,1925078388,2162078206,2614888103,3248222580,3835390401,4022224774,264347078,604807628,770255983,1249150122,1555081692,1996064986,2554220882,2821834349,2952996808,3210313671,3336571891,3584528711,113926993,338241895,666307205,773529912,1294757372,1396182291,1695183700,1986661051,2177026350,2456956037,2730485921,2820302411,3259730800,3345764771,3516065817,3600352804,4094571909,275423344,430227734,506948616,659060556,883997877,958139571,1322822218,1537002063,1747873779,1955562222,2024104815,2227730452,2361852424,2428436474,2756734187,3204031479,3329325298]),t.t)
+B.G9=A.b(s([B.b3,B.aK,B.bE]),A.al("z<ja>"))
+B.Gb=A.b(s([1116352408,1899447441,3049323471,3921009573,961987163,1508970993,2453635748,2870763221,3624381080,310598401,607225278,1426881987,1925078388,2162078206,2614888103,3248222580,3835390401,4022224774,264347078,604807628,770255983,1249150122,1555081692,1996064986,2554220882,2821834349,2952996808,3210313671,3336571891,3584528711,113926993,338241895,666307205,773529912,1294757372,1396182291,1695183700,1986661051,2177026350,2456956037,2730485921,2820302411,3259730800,3345764771,3516065817,3600352804,4094571909,275423344,430227734,506948616,659060556,883997877,958139571,1322822218,1537002063,1747873779,1955562222,2024104815,2227730452,2361852424,2428436474,2756734187,3204031479,3329325298]),t.t)
 B.yt=new A.k(!0,B.l,null,null,null,null,null,B.dd,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.SW=new A.fc("Informa\xe7\xf5es de Contato",null,B.yt,null,null,null,null,null,null)
 B.E9=new A.a17(61664,"FontAwesomeRegular","font_awesome_flutter",!1)
@@ -85664,7 +85664,7 @@ B.Eb=new A.r2(62405,"FontAwesomeSolid","font_awesome_flutter",!1)
 B.EY=new A.o5(B.Eb,"Localiza\xe7\xe3o","Frederico Westphalen-RS, Brasil",null)
 B.E6=new A.r1(61665,"FontAwesomeBrands","font_awesome_flutter",!1)
 B.F0=new A.o5(B.E6,"LinkedIn","linkedin.com/in/rodrigo-magalski-rubin/",null)
-B.Ge=A.b(s([B.SW,B.EZ,B.F_,B.EY,B.F0]),t.p)
+B.Gd=A.b(s([B.SW,B.EZ,B.F_,B.EY,B.F0]),t.p)
 B.au=new A.e0(0,"icon")
 B.aG=new A.e0(1,"input")
 B.a1=new A.e0(2,"label")
@@ -85676,7 +85676,7 @@ B.aB=new A.e0(7,"suffixIcon")
 B.bt=new A.e0(8,"helperError")
 B.bF=new A.e0(9,"counter")
 B.c6=new A.e0(10,"container")
-B.Gf=A.b(s([B.au,B.aG,B.a1,B.aL,B.aM,B.aN,B.Y,B.aB,B.bt,B.bF,B.c6]),A.al("z<e0>"))
+B.Ge=A.b(s([B.au,B.aG,B.a1,B.aL,B.aM,B.aN,B.Y,B.aB,B.bt,B.bF,B.c6]),A.al("z<e0>"))
 B.Hh=new A.iI("en","US")
 B.n1=A.b(s([B.Hh]),t.ss)
 B.UQ=new A.kE(0,0)
@@ -85686,6 +85686,28 @@ B.UU=new A.kE(6,0.11)
 B.US=new A.kE(8,0.12)
 B.UR=new A.kE(12,0.14)
 B.n2=A.b(s([B.UQ,B.UV,B.UT,B.UU,B.US,B.UR]),A.al("z<kE>"))
+B.GW=A.b(s(["images/projects/barth_fitness_app/1.png","images/projects/barth_fitness_app/2.png","images/projects/barth_fitness_app/3.png","images/projects/barth_fitness_app/4.png","images/projects/barth_fitness_app/5.png","images/projects/barth_fitness_app/6.png","images/projects/barth_fitness_app/7.png","images/projects/barth_fitness_app/8.png"]),t.s)
+B.G6=A.b(s(["Flutter","Firebase","GraphQL","Instagram"]),t.s)
+B.L6=new A.fE("BarthFitness \u2013 App para gest\xe3o de treinos e servi\xe7os da academia","Aplicativo mobile desenvolvido para aproximar alunos da academia e oferecer uma experi\xeancia completa de acompanhamento f\xedsico. O BarthFitness permite visualizar e controlar treinos, acompanhar evolu\xe7\xe3o di\xe1ria, agendar servi\xe7os ou aulas personalizadas e adquirir pacotes diretamente pelo app. O app ainda possui integra\xe7\xe3o com o Instagram e Facebook permitindo publicar fotos da rotina de treinos nas redes sociais. Al\xe9m disso, entrega uma navega\xe7\xe3o intuitiva e totalmente integrada \xe0s rotinas da academia. O aplicativo est\xe1 em produ\xe7\xe3o e publicado nas lojas Android e iOS.",B.GW,B.G6)
+B.He=A.b(s(["images/projects/barth_fitness/agenda.png","images/projects/barth_fitness/AI_report.png","images/projects/barth_fitness/contracts.png","images/projects/barth_fitness/home.png","images/projects/barth_fitness/payments.png","images/projects/barth_fitness/training.png","images/projects/barth_fitness/venda.png"]),t.s)
+B.Fl=A.b(s(["Angular","Typescript","GraphQL","Firebase"]),t.s)
+B.Lc=new A.fE("BarthFitness Web \u2013 Plataforma completa de gest\xe3o para academias e studios","Sistema web desenvolvido para oferecer uma administra\xe7\xe3o abrangente e eficiente do ambiente fitness. A plataforma permite cadastrar clientes e funcion\xe1rios com controle avan\xe7ado de permiss\xf5es, gerenciar treinos, aulas e servi\xe7os personalizados, registrar avalia\xe7\xf5es f\xedsicas e organizar vendas de produtos, pacotes e contratos. Tamb\xe9m inclui ferramentas para cria\xe7\xe3o de promo\xe7\xf5es e integra\xe7\xe3o com catracas para controle de acesso. O BarthFitness Web entrega uma solu\xe7\xe3o robusta e centralizada para academias e studios que buscam otimizar sua opera\xe7\xe3o di\xe1ria.",B.He,B.Fl)
+B.Hf=A.b(s(["images/projects/petmais_app/login_app.png","images/projects/petmais_app/home_app.png","images/projects/petmais_app/schedule_app.png","images/projects/petmais_app/pet_app.png","images/projects/petmais_app/schedule_detail_app.png","images/projects/petmais_app/schedules_app.png","images/projects/petmais_app/vaccination_app.png"]),t.s)
+B.Go=A.b(s(["Flutter","Firebase","API REST","Push Notifications","Geolocaliza\xe7\xe3o"]),t.s)
+B.L7=new A.fE("Pet+ \u2013 App para tutores de pets","Aplicativo mobile desenvolvido para proporcionar uma experi\xeancia completa e diferenciada aos tutores de pets. O Pet+ exibe empresas e servi\xe7os pr\xf3ximos \xe0 localiza\xe7\xe3o do usu\xe1rio, permitindo agendar atendimentos ou hospedagens em hot\xe9is parceiros de forma pr\xe1tica. O app oferece ainda acompanhamento de todos os agendamentos, controle da carteira de vacina\xe7\xe3o, cadastro de animais, al\xe9m de recursos para registrar e encontrar pets perdidos ou dispon\xedveis para ado\xe7\xe3o. Com integra\xe7\xe3o total a um backend pr\xf3prio em Dart \u2014 incluindo autentica\xe7\xe3o JWT e envio de notifica\xe7\xf5es personalizadas como anivers\xe1rios, lembretes de vacinas e pr\xf3ximos servi\xe7os \u2014 o Pet+ entrega uma jornada moderna e intuitiva. O aplicativo est\xe1 totalmente finalizado e publicado nas lojas Android e iOS.",B.Hf,B.Go)
+B.Fk=A.b(s(["images/projects/petmais_web/login.png","images/projects/petmais_web/home.png","images/projects/petmais_web/configs.png","images/projects/petmais_web/schedule.png","images/projects/petmais_web/reports.png","images/projects/petmais_web/funcionarios.png"]),t.s)
+B.H7=A.b(s(["Flutter Web","Firebase","API REST","Push Notifications","AWS"]),t.s)
+B.L8=new A.fE("Pet+ Web \u2013 Plataforma de gest\xe3o para empresas do ramo pet","Plataforma web responsiva desenvolvida em Flutter Web, criada para atender empresas do setor pet. A solu\xe7\xe3o permite configurar servi\xe7os, gerenciar agendamentos de atendimentos e hospedagens, cadastrar funcion\xe1rios com controle avan\xe7ado de permiss\xf5es, registrar produtos e acompanhar o desempenho da empresa por meio de relat\xf3rios detalhados. Totalmente integrada ao backend em Dart, a Pet+ Web oferece uma gest\xe3o unificada, moderna e eficiente, simplificando as opera\xe7\xf5es di\xe1rias do neg\xf3cio pet.",B.Fk,B.H7)
+B.GG=A.b(s(["/images/projects/desconecte/home.png","/images/projects/desconecte/jogos.png","/images/projects/desconecte/item.png","/images/projects/desconecte/item_2.png"]),t.s)
+B.G7=A.b(s(["Flutter","Firebase","IA"]),t.s)
+B.Lb=new A.fE("Desconecte \u2013 Minijogos offline para conectar pessoas","Desconecte \xe9 um app de minijogos e desafios criado para aproximar casais, duplas e grupos por meio de experi\xeancias r\xe1pidas, criativas e totalmente offline. Com uma interface moderna e fluida, o app traz diversas categorias de jogos \u2014 de atividades leves a din\xe2micas competitivas \u2014 todas pensadas para encontros, viagens, festas ou momentos em casa. O grande diferencial do Desconecte \xe9 seu gerador interno de desafios por IA, que cria jogos personalizados conforme o contexto do usu\xe1rio (vibe do encontro, tempo dispon\xedvel, energia, local e faixa et\xe1ria), tudo sem depender de servi\xe7os externos. Sem necessidade de cadastro, o app permite jogar instantaneamente e oferece a op\xe7\xe3o de criar conta para sincroniza\xe7\xe3o e assinatura.",B.GG,B.G7)
+B.Ga=A.b(s(["images/projects/quiz_faction/image_1.png","images/projects/quiz_faction/image_2.png","images/projects/quiz_faction/image_3.png","images/projects/quiz_faction/image_4.png"]),t.s)
+B.G8=A.b(s(["Flutter","Firebase","SQLite"]),t.s)
+B.L9=new A.fE("Quiz Faction \u2013 App oficial da Expofred","Aplicativo desenvolvido para a equipe de pesquisa da UFSM-FW, utilizado na coleta de dados de frequentadores e expositores da feira Expofred. O app permite criar e preencher formul\xe1rios personalizados, funciona totalmente offline durante as entrevistas e armazena os dados localmente em SQLite. Posteriormente, realiza a sincroniza\xe7\xe3o dos formul\xe1rios com o servidor na nuvem (Firebase). Seu grande diferencial \xe9 a flexibilidade na cria\xe7\xe3o dos formul\xe1rios e a opera\xe7\xe3o offline com envio peri\xf3dico das coletas.",B.Ga,B.G8)
+B.Gp=A.b(s(["images/projects/2kfest/login.png","images/projects/2kfest/ingressos.png","images/projects/2kfest/ingressos_vendidos.png","images/projects/2kfest/validacao.png","images/projects/2kfest/venda_ingressos.png"]),t.s)
+B.Hg=A.b(s(["Flutter Web","Firebase","Whatsapp","Qr Code","C\xe2mera"]),t.s)
+B.La=new A.fE("2K Fest - App de venda e valida\xe7\xe3o de ingressos","Aplicativo desenvolvido em Flutter Web com Firebase para a venda de ingressos do evento beneficente promovido pelo Rotaract. O sistema permitia que vendedores cadastrados registrassem as vendas, enviando automaticamente o ingresso com QR Code para o WhatsApp do comprador. No dia do evento, o app realizava a valida\xe7\xe3o dos tickets, conferindo autenticidade e impedindo reutiliza\xe7\xf5es. Uma solu\xe7\xe3o completa para gest\xe3o de vendas, emiss\xe3o e controle de acesso.",B.Gp,B.Hg)
+B.Gl=A.b(s([B.L6,B.Lc,B.L7,B.L8,B.Lb,B.L9,B.La]),A.al("z<fE>"))
 B.Gm=A.b(s([-1,0,0,1,0,0,-1,0,1,0,0,0,-1,1,0,1,1,1,1,0]),t.n)
 B.zk=new A.Gd(2,"outer")
 B.lL=new A.D(0.09803921568627451,0,0,0,B.h)
@@ -85719,42 +85741,42 @@ B.yM=new A.tY(2,"bottomLeft")
 B.UM=new A.kD(B.yL,B.yM)
 B.UN=new A.kD(B.yM,B.yL)
 B.GB=A.b(s([B.UL,B.UO,B.UM,B.UN]),A.al("z<kD>"))
-B.GF=A.b(s(["click","scroll"]),t.s)
+B.GE=A.b(s(["click","scroll"]),t.s)
 B.zL=new A.q1()
 B.eD=new A.L2(1,"page")
 B.hl=new A.dO(B.K,B.eD)
-B.GG=A.b(s([B.zL,B.hl]),A.al("z<aH>"))
-B.GQ=A.b(s([]),t.QP)
+B.GF=A.b(s([B.zL,B.hl]),A.al("z<aH>"))
+B.GO=A.b(s([]),t.QP)
 B.n4=A.b(s([]),A.al("z<aLc>"))
-B.GS=A.b(s([]),t.D)
-B.GU=A.b(s([]),t.fJ)
-B.GW=A.b(s([]),t.ER)
-B.GL=A.b(s([]),t.tc)
+B.GQ=A.b(s([]),t.D)
+B.GS=A.b(s([]),t.fJ)
+B.GU=A.b(s([]),t.ER)
+B.GJ=A.b(s([]),t.tc)
 B.fW=A.b(s([]),t.jl)
-B.GN=A.b(s([]),t.wi)
-B.GM=A.b(s([]),A.al("z<at2<@>>"))
+B.GL=A.b(s([]),t.wi)
+B.GK=A.b(s([]),A.al("z<at2<@>>"))
 B.jx=A.b(s([]),t.AO)
-B.GP=A.b(s([]),t.D1)
+B.GN=A.b(s([]),t.D1)
 B.jw=A.b(s([]),t.QF)
-B.GT=A.b(s([]),t.Lx)
-B.GV=A.b(s([]),t.fm)
-B.GX=A.b(s([]),t.p)
-B.GK=A.b(s([]),t.t)
+B.GR=A.b(s([]),t.Lx)
+B.GT=A.b(s([]),t.fm)
+B.GV=A.b(s([]),t.p)
+B.GI=A.b(s([]),t.t)
 B.n3=A.b(s([]),t.ee)
-B.GR=A.b(s([]),t.XS)
+B.GP=A.b(s([]),t.XS)
 B.n5=A.b(s([B.dc,B.fK,B.fL,B.n,B.T,B.dd,B.bN,B.fM,B.de]),A.al("z<eG>"))
 B.JC=new A.h(0,2)
 B.zE=new A.dI(0.75,B.f2,B.lL,B.JC,1.5)
-B.H0=A.b(s([B.zE]),t.sq)
+B.H_=A.b(s([B.zE]),t.sq)
 B.eh=A.b(s([B.cr,B.cb,B.f0,B.f1,B.ib]),t.QP)
 B.Bn=new A.D(1,0.13333333333333333,0.38823529411764707,0.5529411764705883,B.h)
 B.Bp=new A.D(1,0.07058823529411765,0.17647058823529413,0.2823529411764706,B.h)
-B.H5=A.b(s([B.Bn,B.Bp]),t.t_)
+B.H4=A.b(s([B.Bn,B.Bp]),t.t_)
 B.E8=new A.r1(61595,"FontAwesomeBrands","font_awesome_flutter",!1)
 B.E2=new A.xl(B.E8,"https://github.com/RodrigoMagalskiDev",null)
 B.E7=new A.r1(61580,"FontAwesomeBrands","font_awesome_flutter",!1)
 B.E3=new A.xl(B.E7,"https://www.linkedin.com/in/rodrigo-magalski-flutter/",null)
-B.Hb=A.b(s([B.E2,B.E3]),t.p)
+B.Ha=A.b(s([B.E2,B.E3]),t.p)
 B.dk=new A.fz(0,"controlModifier")
 B.dl=new A.fz(1,"shiftModifier")
 B.dm=new A.fz(2,"altModifier")
@@ -85766,29 +85788,7 @@ B.jT=new A.fz(7,"functionModifier")
 B.ta=new A.fz(8,"symbolModifier")
 B.n6=A.b(s([B.dk,B.dl,B.dm,B.dn,B.jQ,B.jR,B.jS,B.jT,B.ta]),A.al("z<fz>"))
 B.jy=A.b(s([!0,!1]),t.HZ)
-B.He=A.b(s(["pointerdown","pointermove","pointerleave","pointerup","pointercancel","touchstart","touchend","touchmove","touchcancel","mousedown","mousemove","mouseleave","mouseup","wheel"]),t.s)
-B.G7=A.b(s(["/images/projects/barth_fitness_app/1.png","/images/projects/barth_fitness_app/2.png","/images/projects/barth_fitness_app/3.png","/images/projects/barth_fitness_app/4.png","/images/projects/barth_fitness_app/5.png","/images/projects/barth_fitness_app/6.png","/images/projects/barth_fitness_app/7.png","/images/projects/barth_fitness_app/8.png"]),t.s)
-B.G8=A.b(s(["Flutter","Firebase","GraphQL","Instagram"]),t.s)
-B.L8=new A.fE("BarthFitness \u2013 App para gest\xe3o de treinos e servi\xe7os da academia","Aplicativo mobile desenvolvido para aproximar alunos da academia e oferecer uma experi\xeancia completa de acompanhamento f\xedsico. O BarthFitness permite visualizar e controlar treinos, acompanhar evolu\xe7\xe3o di\xe1ria, agendar servi\xe7os ou aulas personalizadas e adquirir pacotes diretamente pelo app. O app ainda possui integra\xe7\xe3o com o Instagram e Facebook permitindo publicar fotos da rotina de treinos nas redes sociais. Al\xe9m disso, entrega uma navega\xe7\xe3o intuitiva e totalmente integrada \xe0s rotinas da academia. O aplicativo est\xe1 em produ\xe7\xe3o e publicado nas lojas Android e iOS.",B.G7,B.G8)
-B.Gp=A.b(s(["/images/projects/barth_fitness/agenda.png","/images/projects/barth_fitness/AI_report.png","/images/projects/barth_fitness/contracts.png","/images/projects/barth_fitness/home.png","/images/projects/barth_fitness/payments.png","/images/projects/barth_fitness/training.png","/images/projects/barth_fitness/venda.png"]),t.s)
-B.Fk=A.b(s(["Angular","Typescript","GraphQL","Firebase"]),t.s)
-B.L7=new A.fE("BarthFitness Web \u2013 Plataforma completa de gest\xe3o para academias e studios","Sistema web desenvolvido para oferecer uma administra\xe7\xe3o abrangente e eficiente do ambiente fitness. A plataforma permite cadastrar clientes e funcion\xe1rios com controle avan\xe7ado de permiss\xf5es, gerenciar treinos, aulas e servi\xe7os personalizados, registrar avalia\xe7\xf5es f\xedsicas e organizar vendas de produtos, pacotes e contratos. Tamb\xe9m inclui ferramentas para cria\xe7\xe3o de promo\xe7\xf5es e integra\xe7\xe3o com catracas para controle de acesso. O BarthFitness Web entrega uma solu\xe7\xe3o robusta e centralizada para academias e studios que buscam otimizar sua opera\xe7\xe3o di\xe1ria.",B.Gp,B.Fk)
-B.GC=A.b(s(["/images/projects/petmais_app/login_app.png","/images/projects/petmais_app/home_app.png","/images/projects/petmais_app/schedule_app.png","/images/projects/petmais_app/pet_app.png","/images/projects/petmais_app/schedule_detail_app.png","/images/projects/petmais_app/schedules_app.png","/images/projects/petmais_app/vaccination_app.png"]),t.s)
-B.Go=A.b(s(["Flutter","Firebase","API REST","Push Notifications","Geolocaliza\xe7\xe3o"]),t.s)
-B.Lc=new A.fE("Pet+ \u2013 App para tutores de pets","Aplicativo mobile desenvolvido para proporcionar uma experi\xeancia completa e diferenciada aos tutores de pets. O Pet+ exibe empresas e servi\xe7os pr\xf3ximos \xe0 localiza\xe7\xe3o do usu\xe1rio, permitindo agendar atendimentos ou hospedagens em hot\xe9is parceiros de forma pr\xe1tica. O app oferece ainda acompanhamento de todos os agendamentos, controle da carteira de vacina\xe7\xe3o, cadastro de animais, al\xe9m de recursos para registrar e encontrar pets perdidos ou dispon\xedveis para ado\xe7\xe3o. Com integra\xe7\xe3o total a um backend pr\xf3prio em Dart \u2014 incluindo autentica\xe7\xe3o JWT e envio de notifica\xe7\xf5es personalizadas como anivers\xe1rios, lembretes de vacinas e pr\xf3ximos servi\xe7os \u2014 o Pet+ entrega uma jornada moderna e intuitiva. O aplicativo est\xe1 totalmente finalizado e publicado nas lojas Android e iOS.",B.GC,B.Go)
-B.G2=A.b(s(["/images/projects/petmais_web/login.png","/images/projects/petmais_web/home.png","/images/projects/petmais_web/configs.png","/images/projects/petmais_web/schedule.png","/images/projects/petmais_web/reports.png","/images/projects/petmais_web/funcionarios.png"]),t.s)
-B.H8=A.b(s(["Flutter Web","Firebase","API REST","Push Notifications","AWS"]),t.s)
-B.L9=new A.fE("Pet+ Web \u2013 Plataforma de gest\xe3o para empresas do ramo pet","Plataforma web responsiva desenvolvida em Flutter Web, criada para atender empresas do setor pet. A solu\xe7\xe3o permite configurar servi\xe7os, gerenciar agendamentos de atendimentos e hospedagens, cadastrar funcion\xe1rios com controle avan\xe7ado de permiss\xf5es, registrar produtos e acompanhar o desempenho da empresa por meio de relat\xf3rios detalhados. Totalmente integrada ao backend em Dart, a Pet+ Web oferece uma gest\xe3o unificada, moderna e eficiente, simplificando as opera\xe7\xf5es di\xe1rias do neg\xf3cio pet.",B.G2,B.H8)
-B.GH=A.b(s(["/images/projects/desconecte/home.png","/images/projects/desconecte/jogos.png","/images/projects/desconecte/item.png","/images/projects/desconecte/item_2.png"]),t.s)
-B.G9=A.b(s(["Flutter","Firebase","IA"]),t.s)
-B.La=new A.fE("Desconecte \u2013 Minijogos offline para conectar pessoas","Desconecte \xe9 um app de minijogos e desafios criado para aproximar casais, duplas e grupos por meio de experi\xeancias r\xe1pidas, criativas e totalmente offline. Com uma interface moderna e fluida, o app traz diversas categorias de jogos \u2014 de atividades leves a din\xe2micas competitivas \u2014 todas pensadas para encontros, viagens, festas ou momentos em casa. O grande diferencial do Desconecte \xe9 seu gerador interno de desafios por IA, que cria jogos personalizados conforme o contexto do usu\xe1rio (vibe do encontro, tempo dispon\xedvel, energia, local e faixa et\xe1ria), tudo sem depender de servi\xe7os externos. Sem necessidade de cadastro, o app permite jogar instantaneamente e oferece a op\xe7\xe3o de criar conta para sincroniza\xe7\xe3o e assinatura.",B.GH,B.G9)
-B.GI=A.b(s(["/images/projects/quiz_faction/image_1.png","/images/projects/quiz_faction/image_2.png","/images/projects/quiz_faction/image_3.png","/images/projects/quiz_faction/image_4.png"]),t.s)
-B.Ga=A.b(s(["Flutter","Firebase","SQLite"]),t.s)
-B.L6=new A.fE("Quiz Faction \u2013 App oficial da Expofred","Aplicativo desenvolvido para a equipe de pesquisa da UFSM-FW, utilizado na coleta de dados de frequentadores e expositores da feira Expofred. O app permite criar e preencher formul\xe1rios personalizados, funciona totalmente offline durante as entrevistas e armazena os dados localmente em SQLite. Posteriormente, realiza a sincroniza\xe7\xe3o dos formul\xe1rios com o servidor na nuvem (Firebase). Seu grande diferencial \xe9 a flexibilidade na cria\xe7\xe3o dos formul\xe1rios e a opera\xe7\xe3o offline com envio peri\xf3dico das coletas.",B.GI,B.Ga)
-B.G4=A.b(s(["/images/projects/2kfest/login.png","/images/projects/2kfest/ingressos.png","/images/projects/2kfest/ingressos_vendidos.png","/images/projects/2kfest/validacao.png","/images/projects/2kfest/venda_ingressos.png"]),t.s)
-B.Hg=A.b(s(["Flutter Web","Firebase","Whatsapp","Qr Code","C\xe2mera"]),t.s)
-B.Lb=new A.fE("2K Fest - App de venda e valida\xe7\xe3o de ingressos","Aplicativo desenvolvido em Flutter Web com Firebase para a venda de ingressos do evento beneficente promovido pelo Rotaract. O sistema permitia que vendedores cadastrados registrassem as vendas, enviando automaticamente o ingresso com QR Code para o WhatsApp do comprador. No dia do evento, o app realizava a valida\xe7\xe3o dos tickets, conferindo autenticidade e impedindo reutiliza\xe7\xf5es. Uma solu\xe7\xe3o completa para gest\xe3o de vendas, emiss\xe3o e controle de acesso.",B.G4,B.Hg)
-B.Hf=A.b(s([B.L8,B.L7,B.Lc,B.L9,B.La,B.L6,B.Lb]),A.al("z<fE>"))
+B.Hd=A.b(s(["pointerdown","pointermove","pointerleave","pointerup","pointercancel","touchstart","touchend","touchmove","touchcancel","mousedown","mousemove","mouseleave","mouseup","wheel"]),t.s)
 B.m=new A.y2(0,"ignored")
 B.aI=new A.e(4294967304)
 B.ej=new A.e(4294967323)
@@ -86313,72 +86313,72 @@ B.jO=new A.bz(B.b8,[],A.al("bz<y,@>"))
 B.t5=new A.bz(B.b8,[],A.al("bz<Am,@>"))
 B.IW=new A.bz(B.b8,[],A.al("bz<fJ,cu>"))
 B.t2=new A.bz(B.b8,[],A.al("bz<fJ,nU<cu>>"))
-B.FA=A.b(s([42,null,null,8589935146]),t.Z)
-B.FB=A.b(s([43,null,null,8589935147]),t.Z)
-B.FC=A.b(s([45,null,null,8589935149]),t.Z)
-B.FD=A.b(s([46,null,null,8589935150]),t.Z)
-B.FE=A.b(s([47,null,null,8589935151]),t.Z)
-B.FF=A.b(s([48,null,null,8589935152]),t.Z)
-B.FG=A.b(s([49,null,null,8589935153]),t.Z)
-B.FI=A.b(s([50,null,null,8589935154]),t.Z)
-B.FK=A.b(s([51,null,null,8589935155]),t.Z)
-B.FL=A.b(s([52,null,null,8589935156]),t.Z)
-B.FM=A.b(s([53,null,null,8589935157]),t.Z)
-B.FN=A.b(s([54,null,null,8589935158]),t.Z)
-B.FO=A.b(s([55,null,null,8589935159]),t.Z)
-B.FP=A.b(s([56,null,null,8589935160]),t.Z)
-B.FR=A.b(s([57,null,null,8589935161]),t.Z)
+B.FB=A.b(s([42,null,null,8589935146]),t.Z)
+B.FC=A.b(s([43,null,null,8589935147]),t.Z)
+B.FD=A.b(s([45,null,null,8589935149]),t.Z)
+B.FE=A.b(s([46,null,null,8589935150]),t.Z)
+B.FF=A.b(s([47,null,null,8589935151]),t.Z)
+B.FG=A.b(s([48,null,null,8589935152]),t.Z)
+B.FH=A.b(s([49,null,null,8589935153]),t.Z)
+B.FJ=A.b(s([50,null,null,8589935154]),t.Z)
+B.FL=A.b(s([51,null,null,8589935155]),t.Z)
+B.FM=A.b(s([52,null,null,8589935156]),t.Z)
+B.FN=A.b(s([53,null,null,8589935157]),t.Z)
+B.FO=A.b(s([54,null,null,8589935158]),t.Z)
+B.FP=A.b(s([55,null,null,8589935159]),t.Z)
+B.FQ=A.b(s([56,null,null,8589935160]),t.Z)
+B.FS=A.b(s([57,null,null,8589935161]),t.Z)
 B.Gs=A.b(s([8589934852,8589934852,8589934853,null]),t.Z)
-B.Fp=A.b(s([4294967555,null,4294967555,null]),t.Z)
-B.Fq=A.b(s([4294968065,null,null,8589935154]),t.Z)
-B.Fr=A.b(s([4294968066,null,null,8589935156]),t.Z)
-B.Fs=A.b(s([4294968067,null,null,8589935158]),t.Z)
-B.Ft=A.b(s([4294968068,null,null,8589935160]),t.Z)
-B.Fy=A.b(s([4294968321,null,null,8589935157]),t.Z)
+B.Fq=A.b(s([4294967555,null,4294967555,null]),t.Z)
+B.Fr=A.b(s([4294968065,null,null,8589935154]),t.Z)
+B.Fs=A.b(s([4294968066,null,null,8589935156]),t.Z)
+B.Ft=A.b(s([4294968067,null,null,8589935158]),t.Z)
+B.Fu=A.b(s([4294968068,null,null,8589935160]),t.Z)
+B.Fz=A.b(s([4294968321,null,null,8589935157]),t.Z)
 B.Gt=A.b(s([8589934848,8589934848,8589934849,null]),t.Z)
-B.Fo=A.b(s([4294967423,null,null,8589935150]),t.Z)
-B.Fu=A.b(s([4294968069,null,null,8589935153]),t.Z)
-B.Fn=A.b(s([4294967309,null,null,8589935117]),t.Z)
-B.Fv=A.b(s([4294968070,null,null,8589935159]),t.Z)
-B.Fz=A.b(s([4294968327,null,null,8589935152]),t.Z)
+B.Fp=A.b(s([4294967423,null,null,8589935150]),t.Z)
+B.Fv=A.b(s([4294968069,null,null,8589935153]),t.Z)
+B.Fo=A.b(s([4294967309,null,null,8589935117]),t.Z)
+B.Fw=A.b(s([4294968070,null,null,8589935159]),t.Z)
+B.FA=A.b(s([4294968327,null,null,8589935152]),t.Z)
 B.Gu=A.b(s([8589934854,8589934854,8589934855,null]),t.Z)
-B.Fw=A.b(s([4294968071,null,null,8589935155]),t.Z)
-B.Fx=A.b(s([4294968072,null,null,8589935161]),t.Z)
+B.Fx=A.b(s([4294968071,null,null,8589935155]),t.Z)
+B.Fy=A.b(s([4294968072,null,null,8589935161]),t.Z)
 B.Gv=A.b(s([8589934850,8589934850,8589934851,null]),t.Z)
-B.t6=new A.de(["*",B.FA,"+",B.FB,"-",B.FC,".",B.FD,"/",B.FE,"0",B.FF,"1",B.FG,"2",B.FI,"3",B.FK,"4",B.FL,"5",B.FM,"6",B.FN,"7",B.FO,"8",B.FP,"9",B.FR,"Alt",B.Gs,"AltGraph",B.Fp,"ArrowDown",B.Fq,"ArrowLeft",B.Fr,"ArrowRight",B.Fs,"ArrowUp",B.Ft,"Clear",B.Fy,"Control",B.Gt,"Delete",B.Fo,"End",B.Fu,"Enter",B.Fn,"Home",B.Fv,"Insert",B.Fz,"Meta",B.Gu,"PageDown",B.Fw,"PageUp",B.Fx,"Shift",B.Gv],A.al("de<y,T<o?>>"))
-B.FQ=A.b(s([B.nd,null,null,B.rU]),t.L)
-B.GY=A.b(s([B.rG,null,null,B.rV]),t.L)
-B.Gd=A.b(s([B.rH,null,null,B.rW]),t.L)
+B.t6=new A.de(["*",B.FB,"+",B.FC,"-",B.FD,".",B.FE,"/",B.FF,"0",B.FG,"1",B.FH,"2",B.FJ,"3",B.FL,"4",B.FM,"5",B.FN,"6",B.FO,"7",B.FP,"8",B.FQ,"9",B.FS,"Alt",B.Gs,"AltGraph",B.Fq,"ArrowDown",B.Fr,"ArrowLeft",B.Fs,"ArrowRight",B.Ft,"ArrowUp",B.Fu,"Clear",B.Fz,"Control",B.Gt,"Delete",B.Fp,"End",B.Fv,"Enter",B.Fo,"Home",B.Fw,"Insert",B.FA,"Meta",B.Gu,"PageDown",B.Fx,"PageUp",B.Fy,"Shift",B.Gv],A.al("de<y,T<o?>>"))
+B.FR=A.b(s([B.nd,null,null,B.rU]),t.L)
+B.GX=A.b(s([B.rG,null,null,B.rV]),t.L)
+B.Gc=A.b(s([B.rH,null,null,B.rW]),t.L)
 B.Gx=A.b(s([B.rI,null,null,B.cE]),t.L)
 B.Fi=A.b(s([B.rJ,null,null,B.rX]),t.L)
-B.H9=A.b(s([B.rK,null,null,B.jJ]),t.L)
-B.H4=A.b(s([B.rL,null,null,B.eq]),t.L)
-B.FW=A.b(s([B.rM,null,null,B.cF]),t.L)
-B.Hd=A.b(s([B.rN,null,null,B.er]),t.L)
-B.H3=A.b(s([B.rO,null,null,B.cG]),t.L)
-B.FU=A.b(s([B.rP,null,null,B.jK]),t.L)
-B.Fm=A.b(s([B.rQ,null,null,B.cH]),t.L)
-B.G5=A.b(s([B.rR,null,null,B.es]),t.L)
-B.GZ=A.b(s([B.rS,null,null,B.cI]),t.L)
-B.H_=A.b(s([B.rT,null,null,B.et]),t.L)
-B.FX=A.b(s([B.eo,B.eo,B.h2,null]),t.L)
-B.Ha=A.b(s([B.fZ,null,B.fZ,null]),t.L)
-B.Gg=A.b(s([B.by,null,null,B.cF]),t.L)
-B.Gh=A.b(s([B.bl,null,null,B.cG]),t.L)
-B.Gi=A.b(s([B.bm,null,null,B.cH]),t.L)
-B.Hc=A.b(s([B.bz,null,null,B.cI]),t.L)
-B.H1=A.b(s([B.jC,null,null,B.jK]),t.L)
-B.FY=A.b(s([B.en,B.en,B.h1,null]),t.L)
-B.GD=A.b(s([B.aD,null,null,B.cE]),t.L)
-B.Gj=A.b(s([B.cB,null,null,B.eq]),t.L)
-B.FT=A.b(s([B.fY,null,null,B.jI]),t.L)
-B.Gk=A.b(s([B.cC,null,null,B.es]),t.L)
-B.H2=A.b(s([B.jD,null,null,B.jJ]),t.L)
-B.FZ=A.b(s([B.ep,B.ep,B.h3,null]),t.L)
-B.Gl=A.b(s([B.el,null,null,B.er]),t.L)
-B.GJ=A.b(s([B.em,null,null,B.et]),t.L)
-B.G_=A.b(s([B.ci,B.ci,B.cD,null]),t.L)
-B.IZ=new A.de(["*",B.FQ,"+",B.GY,"-",B.Gd,".",B.Gx,"/",B.Fi,"0",B.H9,"1",B.H4,"2",B.FW,"3",B.Hd,"4",B.H3,"5",B.FU,"6",B.Fm,"7",B.G5,"8",B.GZ,"9",B.H_,"Alt",B.FX,"AltGraph",B.Ha,"ArrowDown",B.Gg,"ArrowLeft",B.Gh,"ArrowRight",B.Gi,"ArrowUp",B.Hc,"Clear",B.H1,"Control",B.FY,"Delete",B.GD,"End",B.Gj,"Enter",B.FT,"Home",B.Gk,"Insert",B.H2,"Meta",B.FZ,"PageDown",B.Gl,"PageUp",B.GJ,"Shift",B.G_],A.al("de<y,T<e?>>"))
+B.H8=A.b(s([B.rK,null,null,B.jJ]),t.L)
+B.H3=A.b(s([B.rL,null,null,B.eq]),t.L)
+B.FX=A.b(s([B.rM,null,null,B.cF]),t.L)
+B.Hc=A.b(s([B.rN,null,null,B.er]),t.L)
+B.H2=A.b(s([B.rO,null,null,B.cG]),t.L)
+B.FV=A.b(s([B.rP,null,null,B.jK]),t.L)
+B.Fn=A.b(s([B.rQ,null,null,B.cH]),t.L)
+B.G4=A.b(s([B.rR,null,null,B.es]),t.L)
+B.GY=A.b(s([B.rS,null,null,B.cI]),t.L)
+B.GZ=A.b(s([B.rT,null,null,B.et]),t.L)
+B.FY=A.b(s([B.eo,B.eo,B.h2,null]),t.L)
+B.H9=A.b(s([B.fZ,null,B.fZ,null]),t.L)
+B.Gf=A.b(s([B.by,null,null,B.cF]),t.L)
+B.Gg=A.b(s([B.bl,null,null,B.cG]),t.L)
+B.Gh=A.b(s([B.bm,null,null,B.cH]),t.L)
+B.Hb=A.b(s([B.bz,null,null,B.cI]),t.L)
+B.H0=A.b(s([B.jC,null,null,B.jK]),t.L)
+B.FZ=A.b(s([B.en,B.en,B.h1,null]),t.L)
+B.GC=A.b(s([B.aD,null,null,B.cE]),t.L)
+B.Gi=A.b(s([B.cB,null,null,B.eq]),t.L)
+B.FU=A.b(s([B.fY,null,null,B.jI]),t.L)
+B.Gj=A.b(s([B.cC,null,null,B.es]),t.L)
+B.H1=A.b(s([B.jD,null,null,B.jJ]),t.L)
+B.G_=A.b(s([B.ep,B.ep,B.h3,null]),t.L)
+B.Gk=A.b(s([B.el,null,null,B.er]),t.L)
+B.GH=A.b(s([B.em,null,null,B.et]),t.L)
+B.G0=A.b(s([B.ci,B.ci,B.cD,null]),t.L)
+B.IZ=new A.de(["*",B.FR,"+",B.GX,"-",B.Gc,".",B.Gx,"/",B.Fi,"0",B.H8,"1",B.H3,"2",B.FX,"3",B.Hc,"4",B.H2,"5",B.FV,"6",B.Fn,"7",B.G4,"8",B.GY,"9",B.GZ,"Alt",B.FY,"AltGraph",B.H9,"ArrowDown",B.Gf,"ArrowLeft",B.Gg,"ArrowRight",B.Gh,"ArrowUp",B.Hb,"Clear",B.H0,"Control",B.FZ,"Delete",B.GC,"End",B.Gi,"Enter",B.FU,"Home",B.Gj,"Insert",B.H1,"Meta",B.G_,"PageDown",B.Gk,"PageUp",B.GH,"Shift",B.G0],A.al("de<y,T<e?>>"))
 B.Jv={KeyA:0,KeyB:1,KeyC:2,KeyD:3,KeyE:4,KeyF:5,KeyG:6,KeyH:7,KeyI:8,KeyJ:9,KeyK:10,KeyL:11,KeyM:12,KeyN:13,KeyO:14,KeyP:15,KeyQ:16,KeyR:17,KeyS:18,KeyT:19,KeyU:20,KeyV:21,KeyW:22,KeyX:23,KeyY:24,KeyZ:25,Digit1:26,Digit2:27,Digit3:28,Digit4:29,Digit5:30,Digit6:31,Digit7:32,Digit8:33,Digit9:34,Digit0:35,Minus:36,Equal:37,BracketLeft:38,BracketRight:39,Backslash:40,Semicolon:41,Quote:42,Backquote:43,Comma:44,Period:45,Slash:46}
 B.t7=new A.bz(B.Jv,["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","1","2","3","4","5","6","7","8","9","0","-","=","[","]","\\",";","'","`",",",".","/"],t.li)
 B.Js={Abort:0,Again:1,AltLeft:2,AltRight:3,ArrowDown:4,ArrowLeft:5,ArrowRight:6,ArrowUp:7,AudioVolumeDown:8,AudioVolumeMute:9,AudioVolumeUp:10,Backquote:11,Backslash:12,Backspace:13,BracketLeft:14,BracketRight:15,BrightnessDown:16,BrightnessUp:17,BrowserBack:18,BrowserFavorites:19,BrowserForward:20,BrowserHome:21,BrowserRefresh:22,BrowserSearch:23,BrowserStop:24,CapsLock:25,Comma:26,ContextMenu:27,ControlLeft:28,ControlRight:29,Convert:30,Copy:31,Cut:32,Delete:33,Digit0:34,Digit1:35,Digit2:36,Digit3:37,Digit4:38,Digit5:39,Digit6:40,Digit7:41,Digit8:42,Digit9:43,DisplayToggleIntExt:44,Eject:45,End:46,Enter:47,Equal:48,Escape:49,Esc:50,F1:51,F10:52,F11:53,F12:54,F13:55,F14:56,F15:57,F16:58,F17:59,F18:60,F19:61,F2:62,F20:63,F21:64,F22:65,F23:66,F24:67,F3:68,F4:69,F5:70,F6:71,F7:72,F8:73,F9:74,Find:75,Fn:76,FnLock:77,GameButton1:78,GameButton10:79,GameButton11:80,GameButton12:81,GameButton13:82,GameButton14:83,GameButton15:84,GameButton16:85,GameButton2:86,GameButton3:87,GameButton4:88,GameButton5:89,GameButton6:90,GameButton7:91,GameButton8:92,GameButton9:93,GameButtonA:94,GameButtonB:95,GameButtonC:96,GameButtonLeft1:97,GameButtonLeft2:98,GameButtonMode:99,GameButtonRight1:100,GameButtonRight2:101,GameButtonSelect:102,GameButtonStart:103,GameButtonThumbLeft:104,GameButtonThumbRight:105,GameButtonX:106,GameButtonY:107,GameButtonZ:108,Help:109,Home:110,Hyper:111,Insert:112,IntlBackslash:113,IntlRo:114,IntlYen:115,KanaMode:116,KeyA:117,KeyB:118,KeyC:119,KeyD:120,KeyE:121,KeyF:122,KeyG:123,KeyH:124,KeyI:125,KeyJ:126,KeyK:127,KeyL:128,KeyM:129,KeyN:130,KeyO:131,KeyP:132,KeyQ:133,KeyR:134,KeyS:135,KeyT:136,KeyU:137,KeyV:138,KeyW:139,KeyX:140,KeyY:141,KeyZ:142,KeyboardLayoutSelect:143,Lang1:144,Lang2:145,Lang3:146,Lang4:147,Lang5:148,LaunchApp1:149,LaunchApp2:150,LaunchAssistant:151,LaunchControlPanel:152,LaunchMail:153,LaunchScreenSaver:154,MailForward:155,MailReply:156,MailSend:157,MediaFastForward:158,MediaPause:159,MediaPlay:160,MediaPlayPause:161,MediaRecord:162,MediaRewind:163,MediaSelect:164,MediaStop:165,MediaTrackNext:166,MediaTrackPrevious:167,MetaLeft:168,MetaRight:169,MicrophoneMuteToggle:170,Minus:171,NonConvert:172,NumLock:173,Numpad0:174,Numpad1:175,Numpad2:176,Numpad3:177,Numpad4:178,Numpad5:179,Numpad6:180,Numpad7:181,Numpad8:182,Numpad9:183,NumpadAdd:184,NumpadBackspace:185,NumpadClear:186,NumpadClearEntry:187,NumpadComma:188,NumpadDecimal:189,NumpadDivide:190,NumpadEnter:191,NumpadEqual:192,NumpadMemoryAdd:193,NumpadMemoryClear:194,NumpadMemoryRecall:195,NumpadMemoryStore:196,NumpadMemorySubtract:197,NumpadMultiply:198,NumpadParenLeft:199,NumpadParenRight:200,NumpadSubtract:201,Open:202,PageDown:203,PageUp:204,Paste:205,Pause:206,Period:207,Power:208,PrintScreen:209,PrivacyScreenToggle:210,Props:211,Quote:212,Resume:213,ScrollLock:214,Select:215,SelectTask:216,Semicolon:217,ShiftLeft:218,ShiftRight:219,ShowAllWindows:220,Slash:221,Sleep:222,Space:223,Super:224,Suspend:225,Tab:226,Turbo:227,Undo:228,WakeUp:229,ZoomToggle:230}
