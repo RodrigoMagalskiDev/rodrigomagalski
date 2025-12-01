@@ -49,16 +49,14 @@ class _ProjectCardState extends State<ProjectCard> {
   @override
   Widget build(BuildContext context) {
     final isMobile = Responsive.isMobile(context);
-    final coverHeight = isMobile ? 260.0 : 360.0;
-
     return Card(
       elevation: 4,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          SizedBox(
-            height: coverHeight,
+          AspectRatio(
+            aspectRatio: 4 / 3,
             child: ClipRRect(
               borderRadius: const BorderRadius.only(
                 topLeft: Radius.circular(12),
@@ -72,23 +70,19 @@ class _ProjectCardState extends State<ProjectCard> {
                     itemCount: widget.images.length,
                     itemBuilder: (_, index) {
                       final url = widget.images[index];
-                      final isNetwork = url.startsWith('http');
                       return Stack(
                         fit: StackFit.expand,
                         children: [
-                          isNetwork
-                              ? Image.network(
-                                  url,
-                                  fit: BoxFit.cover,
-                                  errorBuilder: (_, __, ___) =>
-                                      Container(color: Colors.grey.shade300),
-                                )
-                              : Image.asset(
-                                  url,
-                                  fit: BoxFit.cover,
-                                  errorBuilder: (_, __, ___) =>
-                                      Container(color: Colors.grey.shade300),
-                                ),
+                          Container(
+                            color: isMobile ? Colors.grey.shade200 : null,
+                          ),
+                          Image.asset(
+                            url,
+                            fit: BoxFit.contain,
+                            filterQuality: FilterQuality.high,
+                            errorBuilder: (_, __, ___) =>
+                                Container(color: Colors.grey.shade300),
+                          ),
                           Positioned.fill(
                             child: DecoratedBox(
                               decoration: BoxDecoration(

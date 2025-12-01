@@ -148,12 +148,12 @@ class _HomePageState extends State<HomePage> {
                           SizedBox(height: 60),
                           Center(child: const JumpingArrow()),
                           KeyedSubtree(
-                            key: _projectsKey,
-                            child: const ProjectsList(),
-                          ),
-                          KeyedSubtree(
                             key: _aboutMeKey,
                             child: const AboutMe(),
+                          ),
+                          KeyedSubtree(
+                            key: _projectsKey,
+                            child: const ProjectsList(),
                           ),
                           KeyedSubtree(key: _skillsKey, child: Skills()),
                           KeyedSubtree(
