@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 import 'package:portfolio/core/utils/responsive.dart';
 
 class ProjectCard extends StatefulWidget {
@@ -76,13 +77,21 @@ class _ProjectCardState extends State<ProjectCard> {
                           Container(
                             color: isMobile ? Colors.grey.shade200 : null,
                           ),
-                          Image.asset(
-                            url,
-                            fit: BoxFit.contain,
-                            filterQuality: FilterQuality.high,
-                            errorBuilder: (_, __, ___) =>
-                                Container(color: Colors.grey.shade300),
-                          ),
+                          kIsWeb
+                              ? Image.network(
+                                  'assets/$url',
+                                  fit: BoxFit.contain,
+                                  filterQuality: FilterQuality.high,
+                                  errorBuilder: (_, __, ___) =>
+                                      Container(color: Colors.grey.shade300),
+                                )
+                              : Image.asset(
+                                  url,
+                                  fit: BoxFit.contain,
+                                  filterQuality: FilterQuality.high,
+                                  errorBuilder: (_, __, ___) =>
+                                      Container(color: Colors.grey.shade300),
+                                ),
                           Positioned.fill(
                             child: DecoratedBox(
                               decoration: BoxDecoration(
