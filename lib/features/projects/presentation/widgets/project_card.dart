@@ -79,7 +79,7 @@ class _ProjectCardState extends State<ProjectCard> {
                           ),
                           kIsWeb
                               ? Image.network(
-                                  'assets/$url',
+                                  'assets/assets/$url',
                                   fit: BoxFit.contain,
                                   filterQuality: FilterQuality.high,
                                   errorBuilder: (_, __, ___) =>
