@@ -1,5 +1,4 @@
 import 'package:dio/dio.dart';
-import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 class EmailService {
   final Dio _dio;
@@ -12,7 +11,7 @@ class EmailService {
     required String message,
     String? company,
   }) async {
-    final contactEmail = dotenv.env['CONTACT_EMAIL'];
+    final contactEmail = 'rodrigomagalski.dev@gmail.com';
 
     if (contactEmail == null) {
       throw Exception('Contact email not found in .env');
