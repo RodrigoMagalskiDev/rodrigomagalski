@@ -174,10 +174,12 @@ class _HomePageState extends State<HomePage> {
                         Text(
                           'Desenvolvido com 💙 em Flutter por Rodrigo Magalski Rubin',
                           style: TextStyle(color: context.primaryColor),
+                          textAlign: TextAlign.center,
                         ),
                         Text(
                           '© ${DateTime.now().year} Todos os direitos reservados',
                           style: TextStyle(color: context.primaryColor),
+                          textAlign: TextAlign.center,
                         ),
                       ],
                     ),
