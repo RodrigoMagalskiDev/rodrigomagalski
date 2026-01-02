@@ -172,11 +172,11 @@ class _HomePageState extends State<HomePage> {
                       alignment: WrapAlignment.spaceAround,
                       children: [
                         Text(
-                          'Desenvolvido com Flutter por Rodrigo Magalski Rubin',
+                          'Desenvolvido com 💙 em Flutter por Rodrigo Magalski Rubin',
                           style: TextStyle(color: context.primaryColor),
                         ),
                         Text(
-                          '© 2025 Todos os direitos reservados',
+                          '© ${DateTime.now().year} Todos os direitos reservados',
                           style: TextStyle(color: context.primaryColor),
                         ),
                       ],
