@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/app/services/email_service.dart';
 import 'package:portfolio/core/ui/widgets/gradient_button.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:validatorless/validatorless.dart';
 
 class ContactFormCard extends StatefulWidget {
@@ -16,6 +16,8 @@ class _ContactFormCardState extends State<ContactFormCard> {
   final _emailController = TextEditingController();
   final _companyController = TextEditingController();
   final _messageController = TextEditingController();
+  final _emailService = EmailService();
+  bool _isLoading = false;
 
   @override
   void dispose() {
@@ -77,12 +79,14 @@ class _ContactFormCardState extends State<ContactFormCard> {
               Spacer(),
               Align(
                 alignment: Alignment.center,
-                child: GradientButton(
-                  onPressed: _send,
-                  filled: true,
-                  title: 'Enviar Mensagem',
-                  // width: 200,
-                ),
+                child: _isLoading
+                    ? const CircularProgressIndicator()
+                    : GradientButton(
+                        onPressed: _send,
+                        filled: true,
+                        title: 'Enviar Mensagem',
+                        // width: 200,
+                      ),
               ),
             ],
           ),
@@ -95,42 +99,45 @@ class _ContactFormCardState extends State<ContactFormCard> {
     final valid = _formKey.currentState?.validate() ?? false;
     if (!valid) return;
 
-    final String name = _nameController.text;
-    final String email = _emailController.text;
-    final String company = _companyController.text;
-    final String message = _messageController.text;
+    setState(() {
+      _isLoading = true;
+    });
 
-    final Uri emailUri = Uri(
-      scheme: 'mailto',
-      path: 'rodrigomagalski.dev@gmail.com',
-      query: _encodeQueryParameters(<String, String>{
-        'subject': 'Contato Portfólio - $name',
-        'body':
-            'Nome: $name\nEmail: $email\nEmpresa: $company\n\nMensagem:\n$message',
-      }),
-    );
+    try {
+      await _emailService.sendEmail(
+        name: _nameController.text,
+        email: _emailController.text,
+        message: _messageController.text,
+        company: _companyController.text,
+      );
 
-    if (await canLaunchUrl(emailUri)) {
-      await launchUrl(emailUri);
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(
-            content: Text('Redirecionando para seu app de e-mail...'),
+            content: Text('Mensagem enviada com sucesso!'),
+            backgroundColor: Colors.green,
+          ),
+        );
+        _formKey.currentState?.reset();
+        _nameController.clear();
+        _emailController.clear();
+        _companyController.clear();
+        _messageController.clear();
+      }
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Erro ao enviar mensagem: $e'),
+            backgroundColor: Colors.red,
           ),
         );
       }
-      _formKey.currentState?.reset();
-      _nameController.clear();
-      _emailController.clear();
-      _companyController.clear();
-      _messageController.clear();
-    } else {
+    } finally {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Não foi possível abrir o app de e-mail.'),
-          ),
-        );
+        setState(() {
+          _isLoading = false;
+        });
       }
     }
   }
