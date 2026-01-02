@@ -7,20 +7,26 @@ class ItemInfoContact extends StatelessWidget {
   final IconData icon;
   final String title;
   final String description;
+  final VoidCallback? onTap;
+  final bool isSelectable;
+
   const ItemInfoContact({
     super.key,
     required this.icon,
     required this.title,
     required this.description,
+    this.onTap,
+    this.isSelectable = false,
   });
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(vertical: 8),
+      padding: EdgeInsets.only(bottom: 8),
       height: 60,
-      width: Responsive.isMobile(context) ? double.infinity : context.w(0.2),
+      width: Responsive.isDesktop(context) ? context.w(0.2) : double.infinity,
       child: ListTile(
+        onTap: onTap,
         leading: Container(
           padding: EdgeInsets.all(5),
           decoration: BoxDecoration(
@@ -30,10 +36,12 @@ class ItemInfoContact extends StatelessWidget {
           child: Icon(icon, color: Colors.white),
         ),
         title: Text(title, style: TextStyle(color: context.secondaryColor)),
-        subtitle: Text(
-          description,
-          style: TextStyle(color: context.primaryColor),
-        ),
+        subtitle: isSelectable
+            ? SelectableText(
+                description,
+                style: TextStyle(color: context.primaryColor),
+              )
+            : Text(description, style: TextStyle(color: context.primaryColor)),
       ),
     );
   }

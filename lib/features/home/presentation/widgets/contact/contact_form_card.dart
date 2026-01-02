@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/core/ui/widgets/gradient_button.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:validatorless/validatorless.dart';
 
 class ContactFormCard extends StatefulWidget {
@@ -90,16 +91,56 @@ class _ContactFormCardState extends State<ContactFormCard> {
     );
   }
 
-  void _send() {
+  Future<void> _send() async {
     final valid = _formKey.currentState?.validate() ?? false;
     if (!valid) return;
-    ScaffoldMessenger.of(
-      context,
-    ).showSnackBar(const SnackBar(content: Text('Mensagem enviada!')));
-    _formKey.currentState?.reset();
-    _nameController.clear();
-    _emailController.clear();
-    _companyController.clear();
-    _messageController.clear();
+
+    final String name = _nameController.text;
+    final String email = _emailController.text;
+    final String company = _companyController.text;
+    final String message = _messageController.text;
+
+    final Uri emailUri = Uri(
+      scheme: 'mailto',
+      path: 'rodrigomagalski.dev@gmail.com',
+      query: _encodeQueryParameters(<String, String>{
+        'subject': 'Contato Portfólio - $name',
+        'body':
+            'Nome: $name\nEmail: $email\nEmpresa: $company\n\nMensagem:\n$message',
+      }),
+    );
+
+    if (await canLaunchUrl(emailUri)) {
+      await launchUrl(emailUri);
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Redirecionando para seu app de e-mail...'),
+          ),
+        );
+      }
+      _formKey.currentState?.reset();
+      _nameController.clear();
+      _emailController.clear();
+      _companyController.clear();
+      _messageController.clear();
+    } else {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Não foi possível abrir o app de e-mail.'),
+          ),
+        );
+      }
+    }
+  }
+
+  String _encodeQueryParameters(Map<String, String> params) {
+    return params.entries
+        .map(
+          (MapEntry<String, String> e) =>
+              '${Uri.encodeComponent(e.key)}=${Uri.encodeComponent(e.value)}',
+        )
+        .join('&');
   }
 }

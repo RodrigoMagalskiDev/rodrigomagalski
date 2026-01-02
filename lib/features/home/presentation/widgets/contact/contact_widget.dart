@@ -10,7 +10,7 @@ class ContactWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isMobile = Responsive.isMobile(context);
-    final widthDefault = isMobile ? context.w(.9) : context.w(.35);
+    final widthDefault = isMobile ? context.w(.9) : context.w(.37);
 
     final infoCard = CardInfoContact();
     final formCard = SizedBox(height: 550, child: const ContactFormCard());
