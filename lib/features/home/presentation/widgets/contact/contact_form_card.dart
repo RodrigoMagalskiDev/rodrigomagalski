@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/app/services/email_service.dart';
 import 'package:portfolio/core/ui/widgets/gradient_button.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:validatorless/validatorless.dart';
 
 class ContactFormCard extends StatefulWidget {
@@ -16,8 +17,16 @@ class _ContactFormCardState extends State<ContactFormCard> {
   final _emailController = TextEditingController();
   final _companyController = TextEditingController();
   final _messageController = TextEditingController();
+  final _honeypotController = TextEditingController(); // Honeypot field
   final _emailService = EmailService();
   bool _isLoading = false;
+  late DateTime _mountTime;
+
+  @override
+  void initState() {
+    super.initState();
+    _mountTime = DateTime.now();
+  }
 
   @override
   void dispose() {
@@ -25,6 +34,7 @@ class _ContactFormCardState extends State<ContactFormCard> {
     _emailController.dispose();
     _companyController.dispose();
     _messageController.dispose();
+    _honeypotController.dispose();
     super.dispose();
   }
 
@@ -46,6 +56,14 @@ class _ContactFormCardState extends State<ContactFormCard> {
                 ),
               ),
               const SizedBox(height: 12),
+              // Honeypot field (invisible to users, visible to bots)
+              Offstage(
+                offstage: true,
+                child: TextFormField(
+                  controller: _honeypotController,
+                  decoration: const InputDecoration(labelText: 'Website'),
+                ),
+              ),
               Text('Nome *', style: TextStyle(color: Colors.black)),
               TextFormField(
                 controller: _nameController,
@@ -96,6 +114,19 @@ class _ContactFormCardState extends State<ContactFormCard> {
   }
 
   Future<void> _send() async {
+    // 1. Honeypot Check
+    if (_honeypotController.text.isNotEmpty) {
+      // Bot detected - silent fail
+      _showSuccess();
+      return;
+    }
+
+    // 2. Time-based Check (Bot usually fills instantly)
+    if (DateTime.now().difference(_mountTime).inSeconds < 3) {
+      // Too fast - likely a bot
+      return;
+    }
+
     final valid = _formKey.currentState?.validate() ?? false;
     if (!valid) return;
 
@@ -104,6 +135,16 @@ class _ContactFormCardState extends State<ContactFormCard> {
     });
 
     try {
+      // 3. Rate Limiting Check
+      final prefs = await SharedPreferences.getInstance();
+      final lastSubmission = prefs.getInt('last_submission_timestamp');
+      if (lastSubmission != null) {
+        final lastTime = DateTime.fromMillisecondsSinceEpoch(lastSubmission);
+        if (DateTime.now().difference(lastTime).inMinutes < 2) {
+          throw Exception('Aguarde alguns minutos antes de enviar nova mensagem.');
+        }
+      }
+
       await _emailService.sendEmail(
         name: _nameController.text,
         email: _emailController.text,
@@ -111,24 +152,18 @@ class _ContactFormCardState extends State<ContactFormCard> {
         company: _companyController.text,
       );
 
+      // Update rate limit timestamp
+      await prefs.setInt(
+          'last_submission_timestamp', DateTime.now().millisecondsSinceEpoch);
+
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Mensagem enviada com sucesso!'),
-            backgroundColor: Colors.green,
-          ),
-        );
-        _formKey.currentState?.reset();
-        _nameController.clear();
-        _emailController.clear();
-        _companyController.clear();
-        _messageController.clear();
+        _showSuccess();
       }
     } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Erro ao enviar mensagem: $e'),
+            content: Text(e.toString().replaceAll('Exception: ', '')),
             backgroundColor: Colors.red,
           ),
         );
@@ -140,6 +175,21 @@ class _ContactFormCardState extends State<ContactFormCard> {
         });
       }
     }
+  }
+
+  void _showSuccess() {
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(
+        content: Text('Mensagem enviada com sucesso!'),
+        backgroundColor: Colors.green,
+      ),
+    );
+    _formKey.currentState?.reset();
+    _nameController.clear();
+    _emailController.clear();
+    _companyController.clear();
+    _messageController.clear();
+    _honeypotController.clear();
   }
 
   String _encodeQueryParameters(Map<String, String> params) {
