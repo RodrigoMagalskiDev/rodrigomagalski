@@ -30,7 +30,7 @@ class AboutMe extends StatelessWidget {
                 children: [
                   _buildCard(
                     FontAwesomeIcons.medal,
-                    '4+',
+                    '5+',
                     'Anos de Experiência',
                     context,
                   ),

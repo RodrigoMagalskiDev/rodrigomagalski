@@ -96,6 +96,21 @@ class ProjectsList extends StatelessWidget {
         ],
       ),
       ProjectView(
+        title:
+            'Eidara Tickets - Sistema de emissão e controle de ingressos para eventos',
+        description:
+            'Sistema completo desenvolvido para a empresa Eidara, especializada em soluções de ingressos para eventos. O projeto inclui um site para divulgação e venda de ingressos. Além disso, o sistema conta com painel administrativo para gestão de eventos, controle de pré-vendas, integração com whatsapp para envio automático de ingressos e ainda conta com um módulo para validação dos tickets na entrada dos eventos.',
+        images: [
+          'images/projects/eidara-ticket/evento.png',
+          'images/projects/eidara-ticket/dashboard.png',
+          'images/projects/eidara-ticket/clientes.png',
+          'images/projects/eidara-ticket/lotes.png',
+          'images/projects/eidara-ticket/conferencia.png',
+          'images/projects/eidara-ticket/ingresso.png',
+        ],
+        technologies: ['React', 'Vite', 'Supabase', 'PostgreSQL'],
+      ),
+      ProjectView(
         title: 'Desconecte – Minijogos offline para conectar pessoas',
         description:
             'Desconecte é um app de minijogos e desafios criado para aproximar casais, duplas e grupos por meio de experiências rápidas, criativas e totalmente offline. Com uma interface moderna e fluida, o app traz diversas categorias de jogos — de atividades leves a dinâmicas competitivas — todas pensadas para encontros, viagens, festas ou momentos em casa. O grande diferencial do Desconecte é seu gerador interno de desafios por IA, que cria jogos personalizados conforme o contexto do usuário (vibe do encontro, tempo disponível, energia, local e faixa etária), tudo sem depender de serviços externos. Sem necessidade de cadastro, o app permite jogar instantaneamente e oferece a opção de criar conta para sincronização e assinatura.',
