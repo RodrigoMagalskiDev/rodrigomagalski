@@ -22,6 +22,18 @@ class ProjectsList extends StatelessWidget {
   List<ProjectView> _data() {
     return const [
       ProjectView(
+        title: 'Comparaí - App de Compras',
+        description:
+            'Aplicativo de criação de listas de compras de supermercado que permite uso offline, comparação de preços de produtos entre diferentes estabelecimentos, lista completa de produtos dos mais variados setores, além de recursos para compartilhar listas e acompanhar histórico de compras. O Comparaí entrega uma experiência moderna, fluida e eficiente para facilitar as compras do dia a dia.',
+        images: [
+          'images/projects/comparai/image_1.png',
+          'images/projects/comparai/image_2.png',
+          'images/projects/comparai/image_3.png',
+          'images/projects/comparai/image_4.png',
+        ],
+        technologies: ['Flutter', 'Dart', 'Supabase'],
+      ),
+      ProjectView(
         title:
             'BarthFitness – App para gestão de treinos e serviços da academia',
         description:
