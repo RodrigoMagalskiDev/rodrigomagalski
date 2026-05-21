@@ -8,11 +8,15 @@ class ProjectView {
   final String description;
   final List<String> images;
   final List<String> technologies;
+  final String? actionLabel;
+  final String? actionUrl;
   const ProjectView({
     required this.title,
     required this.description,
     required this.images,
     required this.technologies,
+    this.actionLabel,
+    this.actionUrl,
   });
 }
 
@@ -24,7 +28,7 @@ class ProjectsList extends StatelessWidget {
       ProjectView(
         title: 'Comparaí - App de Compras',
         description:
-            'Aplicativo de criação de listas de compras de supermercado que permite uso offline, comparação de preços de produtos entre diferentes estabelecimentos, lista completa de produtos dos mais variados setores, além de recursos para compartilhar listas e acompanhar histórico de compras. O Comparaí entrega uma experiência moderna, fluida e eficiente para facilitar as compras do dia a dia.',
+            'Aplicativo para criação e organização de listas de compras de supermercado, com uso offline e comparação de preços entre estabelecimentos. O Comparaí oferece uma base ampla de produtos, compartilhamento de listas e histórico de compras, entregando uma experiência simples, fluida e pensada para tornar as compras do dia a dia mais práticas.',
         images: [
           'images/projects/comparai/image_1.png',
           'images/projects/comparai/image_2.png',
@@ -32,51 +36,53 @@ class ProjectsList extends StatelessWidget {
           'images/projects/comparai/image_4.png',
         ],
         technologies: ['Flutter', 'Dart', 'Supabase'],
+        actionLabel: 'Ver na loja',
+        actionUrl:
+            'https://play.google.com/store/apps/details?id=br.com.rodrigomagalskidev.comparai',
       ),
       ProjectView(
-        title:
-            'BarthFitness – App para gestão de treinos e serviços da academia',
+        title: 'Eidara FIT – App para gestão de treinos e serviços da academia',
         description:
-            'Aplicativo mobile desenvolvido para aproximar alunos da academia e oferecer uma experiência completa de acompanhamento físico. O BarthFitness permite visualizar e controlar treinos, acompanhar evolução diária, agendar serviços ou aulas personalizadas e adquirir pacotes diretamente pelo app. O app ainda possui integração com o Instagram e Facebook permitindo publicar fotos da rotina de treinos nas redes sociais. Além disso, entrega uma navegação intuitiva e totalmente integrada às rotinas da academia. O aplicativo está em produção e publicado nas lojas Android e iOS.',
+            'Aplicativo mobile criado para aproximar alunos da academia e centralizar a rotina de treinos e serviços. O Eidara FIT permite visualizar treinos, acompanhar evolução, agendar aulas ou serviços personalizados e adquirir pacotes pelo app. Também conta com integração com redes sociais, oferecendo uma navegação intuitiva e alinhada ao dia a dia da academia.',
         images: [
-          'images/projects/barth_fitness_app/1.png',
-          'images/projects/barth_fitness_app/2.png',
-          'images/projects/barth_fitness_app/3.png',
-          'images/projects/barth_fitness_app/4.png',
-          'images/projects/barth_fitness_app/5.png',
-          'images/projects/barth_fitness_app/6.png',
-          'images/projects/barth_fitness_app/7.png',
-          'images/projects/barth_fitness_app/8.png',
+          'images/projects/eidara_fit_app/login.png',
+          'images/projects/eidara_fit_app/contratos.png',
+          'images/projects/eidara_fit_app/profile.png',
+          'images/projects/eidara_fit_app/treino.png',
+          'images/projects/eidara_fit_app/aulas.png',
         ],
         technologies: ['Flutter', 'Firebase', 'GraphQL', 'Instagram'],
+        actionLabel: 'Ver na loja',
+        actionUrl:
+            'https://play.google.com/store/apps/details?id=br.com.eidara.eidarafit',
       ),
       ProjectView(
         title:
-            'BarthFitness Web – Plataforma completa de gestão para academias e studios',
+            'Eidara FIT Web – Plataforma completa de gestão para academias e studios',
         description:
-            'Sistema web desenvolvido para oferecer uma administração abrangente e eficiente do ambiente fitness. A plataforma permite cadastrar clientes e funcionários com controle avançado de permissões, gerenciar treinos, aulas e serviços personalizados, registrar avaliações físicas e organizar vendas de produtos, pacotes e contratos. Também inclui ferramentas para criação de promoções e integração com catracas para controle de acesso. O BarthFitness Web entrega uma solução robusta e centralizada para academias e studios que buscam otimizar sua operação diária.',
+            'Sistema web desenvolvido para centralizar a administração de academias e studios. A plataforma permite gerenciar clientes, funcionários, permissões, treinos, aulas, serviços personalizados, avaliações físicas, vendas, pacotes e contratos. Também inclui promoções e integração com catracas, entregando uma operação mais organizada, segura e eficiente para o ambiente fitness.',
         images: [
-          'images/projects/barth_fitness/agenda.png',
-          'images/projects/barth_fitness/AI_report.png',
-          'images/projects/barth_fitness/contracts.png',
-          'images/projects/barth_fitness/home.png',
-          'images/projects/barth_fitness/payments.png',
-          'images/projects/barth_fitness/training.png',
-          'images/projects/barth_fitness/venda.png',
+          'images/projects/eidara_fit_web/agenda.png',
+          'images/projects/eidara_fit_web/treino.png',
+          'images/projects/eidara_fit_web/relatorios.png',
+          'images/projects/eidara_fit_web/usuarios.png',
+          'images/projects/eidara_fit_web/logs.png',
+          'images/projects/eidara_fit_web/avaliacao_fisica.png',
+          'images/projects/eidara_fit_web/vendas.png',
         ],
         technologies: ['Angular', 'Typescript', 'GraphQL', 'Firebase'],
       ),
       ProjectView(
-        title: 'Pet+ – App para tutores de pets',
+        title: 'Eidara PET – App para tutores de pets',
         description:
-            'Aplicativo mobile desenvolvido para proporcionar uma experiência completa e diferenciada aos tutores de pets. O Pet+ exibe empresas e serviços próximos à localização do usuário, permitindo agendar atendimentos ou hospedagens em hotéis parceiros de forma prática. O app oferece ainda acompanhamento de todos os agendamentos, controle da carteira de vacinação, cadastro de animais, além de recursos para registrar e encontrar pets perdidos ou disponíveis para adoção. Com integração total a um backend próprio em Dart — incluindo autenticação JWT e envio de notificações personalizadas como aniversários, lembretes de vacinas e próximos serviços — o Pet+ entrega uma jornada moderna e intuitiva. O aplicativo está totalmente finalizado e publicado nas lojas Android e iOS.',
+            'Aplicativo mobile pensado para facilitar a rotina de tutores de pets. O Eidara PET exibe empresas e serviços próximos, permite agendar atendimentos e hospedagens, acompanhar reservas, controlar a carteira de vacinação e cadastrar animais. Também inclui recursos para pets perdidos ou disponíveis para adoção, com notificações personalizadas.',
         images: [
           'images/projects/petmais_app/login_app.png',
           'images/projects/petmais_app/home_app.png',
-          'images/projects/petmais_app/schedule_app.png',
-          'images/projects/petmais_app/pet_app.png',
-          'images/projects/petmais_app/schedule_detail_app.png',
+          'images/projects/petmais_app/supplier_app.png',
           'images/projects/petmais_app/schedules_app.png',
+          'images/projects/petmais_app/pet_app.png',
+          'images/projects/petmais_app/profile_app.png',
           'images/projects/petmais_app/vaccination_app.png',
         ],
         technologies: [
@@ -86,18 +92,22 @@ class ProjectsList extends StatelessWidget {
           'Push Notifications',
           'Geolocalização',
         ],
+        actionLabel: 'Ver na loja',
+        actionUrl:
+            'https://play.google.com/store/apps/details?id=br.com.rodrigomagalskidev.app_pet',
       ),
       ProjectView(
-        title: 'Pet+ Web – Plataforma de gestão para empresas do ramo pet',
+        title:
+            'Eidara PET Web – Plataforma de gestão para empresas do ramo pet',
         description:
-            'Plataforma web responsiva desenvolvida em Flutter Web, criada para atender empresas do setor pet. A solução permite configurar serviços, gerenciar agendamentos de atendimentos e hospedagens, cadastrar funcionários com controle avançado de permissões, registrar produtos e acompanhar o desempenho da empresa por meio de relatórios detalhados. Totalmente integrada ao backend em Dart, a Pet+ Web oferece uma gestão unificada, moderna e eficiente, simplificando as operações diárias do negócio pet.',
+            'Plataforma web responsiva criada para empresas do setor pet organizarem operações em um único lugar. A solução permite configurar serviços, gerenciar agendamentos e hospedagens, cadastrar funcionários com permissões, registrar produtos e acompanhar relatórios de desempenho. Integrada ao backend em Dart, oferece uma gestão moderna e eficiente para o negócio.',
         images: [
           'images/projects/petmais_web/login.png',
           'images/projects/petmais_web/home.png',
           'images/projects/petmais_web/configs.png',
           'images/projects/petmais_web/schedule.png',
           'images/projects/petmais_web/reports.png',
-          'images/projects/petmais_web/funcionarios.png',
+          'images/projects/petmais_web/servicos.png',
         ],
         technologies: [
           'Flutter Web',
@@ -106,12 +116,14 @@ class ProjectsList extends StatelessWidget {
           'Push Notifications',
           'AWS',
         ],
+        actionLabel: 'Ver Site',
+        actionUrl: 'https://eidarapet.eidara.com.br/',
       ),
       ProjectView(
         title:
-            'Eidara Tickets - Sistema de emissão e controle de ingressos para eventos',
+            'Eidara Ticket - Sistema de emissão e controle de ingressos para eventos',
         description:
-            'Sistema completo desenvolvido para a empresa Eidara, especializada em soluções de ingressos para eventos. O projeto inclui um site para divulgação e venda de ingressos. Além disso, o sistema conta com painel administrativo para gestão de eventos, controle de pré-vendas, integração com whatsapp para envio automático de ingressos e ainda conta com um módulo para validação dos tickets na entrada dos eventos.',
+            'Sistema completo para divulgação, venda e controle de ingressos em eventos. O projeto inclui site de vendas, painel administrativo para gestão de eventos e pré-vendas, integração com WhatsApp para envio automático dos ingressos e módulo de validação na entrada. A solução organiza todo o fluxo, da compra ao acesso do participante.',
         images: [
           'images/projects/eidara-ticket/evento.png',
           'images/projects/eidara-ticket/dashboard.png',
@@ -125,7 +137,7 @@ class ProjectsList extends StatelessWidget {
       ProjectView(
         title: 'Desconecte – Minijogos offline para conectar pessoas',
         description:
-            'Desconecte é um app de minijogos e desafios criado para aproximar casais, duplas e grupos por meio de experiências rápidas, criativas e totalmente offline. Com uma interface moderna e fluida, o app traz diversas categorias de jogos — de atividades leves a dinâmicas competitivas — todas pensadas para encontros, viagens, festas ou momentos em casa. O grande diferencial do Desconecte é seu gerador interno de desafios por IA, que cria jogos personalizados conforme o contexto do usuário (vibe do encontro, tempo disponível, energia, local e faixa etária), tudo sem depender de serviços externos. Sem necessidade de cadastro, o app permite jogar instantaneamente e oferece a opção de criar conta para sincronização e assinatura.',
+            'Aplicativo de minijogos e desafios criado para aproximar casais, duplas e grupos em experiências rápidas e offline. O Desconecte oferece categorias variadas, de atividades leves a dinâmicas competitivas, para encontros, viagens, festas ou momentos em casa. Seu gerador interno de desafios por IA cria jogos personalizados conforme contexto, energia e tempo disponível.',
         images: [
           '/images/projects/desconecte/home.png',
           '/images/projects/desconecte/jogos.png',
@@ -133,11 +145,14 @@ class ProjectsList extends StatelessWidget {
           '/images/projects/desconecte/item_2.png',
         ],
         technologies: ['Flutter', 'Firebase', 'IA'],
+        actionLabel: 'Ver na loja',
+        actionUrl:
+            'https://play.google.com/store/apps/details?id=br.com.rodrigomagalskidev.desconecte',
       ),
       ProjectView(
         title: 'Quiz Faction – App oficial da Expofred',
         description:
-            'Aplicativo desenvolvido para a equipe de pesquisa da UFSM-FW, utilizado na coleta de dados de frequentadores e expositores da feira Expofred. O app permite criar e preencher formulários personalizados, funciona totalmente offline durante as entrevistas e armazena os dados localmente em SQLite. Posteriormente, realiza a sincronização dos formulários com o servidor na nuvem (Firebase). Seu grande diferencial é a flexibilidade na criação dos formulários e a operação offline com envio periódico das coletas.',
+            'Aplicativo desenvolvido para a equipe de pesquisa da UFSM-FW coletar dados de frequentadores e expositores da Expofred. O app permite criar e preencher formulários personalizados, funciona offline durante as entrevistas e armazena os dados localmente em SQLite. Depois, sincroniza as coletas com o Firebase, garantindo flexibilidade e segurança no envio.',
         images: [
           'images/projects/quiz_faction/image_1.png',
           'images/projects/quiz_faction/image_2.png',
@@ -149,7 +164,7 @@ class ProjectsList extends StatelessWidget {
       ProjectView(
         title: '2K Fest - App de venda e validação de ingressos',
         description:
-            'Aplicativo desenvolvido em Flutter Web com Firebase para a venda de ingressos do evento beneficente promovido pelo Rotaract. O sistema permitia que vendedores cadastrados registrassem as vendas, enviando automaticamente o ingresso com QR Code para o WhatsApp do comprador. No dia do evento, o app realizava a validação dos tickets, conferindo autenticidade e impedindo reutilizações. Uma solução completa para gestão de vendas, emissão e controle de acesso.',
+            'Aplicativo em Flutter Web com Firebase para venda e validação de ingressos de um evento beneficente do Rotaract. O sistema permitia que vendedores cadastrados registrassem vendas e enviassem automaticamente ingressos com QR Code pelo WhatsApp. No evento, o app validava os tickets, conferindo autenticidade e evitando reutilizações no acesso.',
         images: [
           'images/projects/2kfest/login.png',
           'images/projects/2kfest/ingressos.png',
@@ -173,6 +188,7 @@ class ProjectsList extends StatelessWidget {
     final items = _data();
     final isMobile = Responsive.isMobile(context);
     final cardWidth = isMobile ? context.w(.9) : context.w(.28);
+    final cardHeight = 720.0;
 
     return SizedBox(
       width: double.infinity,
@@ -201,11 +217,14 @@ class ProjectsList extends StatelessWidget {
                 ...items.map(
                   (p) => SizedBox(
                     width: cardWidth,
+                    height: cardHeight,
                     child: ProjectCard(
                       title: p.title,
                       description: p.description,
                       images: p.images,
                       technologies: p.technologies,
+                      actionLabel: p.actionLabel,
+                      actionUrl: p.actionUrl,
                     ),
                   ),
                 ),

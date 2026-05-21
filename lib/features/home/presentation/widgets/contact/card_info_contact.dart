@@ -48,9 +48,11 @@ class CardInfoContact extends StatelessWidget {
               ItemInfoContact(
                 icon: FontAwesomeIcons.linkedinIn,
                 title: 'LinkedIn',
-                description: 'linkedin.com/in/rodrigo-magalski-rubin/',
+                description: 'linkedin.com/in/rodrigo-magalski-flutter/',
                 onTap: () => launchUrl(
-                  Uri.parse('https://linkedin.com/in/rodrigo-magalski-rubin/'),
+                  Uri.parse(
+                    'https://www.linkedin.com/in/rodrigo-magalski-flutter/',
+                  ),
                 ),
               ),
             ],

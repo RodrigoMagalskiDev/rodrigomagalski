@@ -9,6 +9,8 @@ class AboutMe extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final anosExperiencia = DateTime.now().year - 2021;
+
     return Padding(
       padding: Responsive.isMobile(context)
           ? EdgeInsets.zero
@@ -30,7 +32,7 @@ class AboutMe extends StatelessWidget {
                 children: [
                   _buildCard(
                     FontAwesomeIcons.medal,
-                    '5+',
+                    '${anosExperiencia}+',
                     'Anos de Experiência',
                     context,
                   ),
@@ -60,7 +62,7 @@ class AboutMe extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.all(25),
                       child: Text(
-                        'Sou um desenvolvedor mobile com mais de 4 anos de experiência criando aplicativos para iOS e Android. Minha paixão é transformar ideias complexas em soluções mobile elegantes e funcionais.\n\nEspecializado em React Native, Flutter e desenvolvimento nativo, trabalho com metodologias ágeis e sempre busco as melhores práticas de desenvolvimento para entregar produtos de alta qualidade.\n\nEstou sempre em busca de novos desafios e oportunidades para criar aplicativos que façam a diferença na vida das pessoas.',
+                        'Sou um desenvolvedor mobile com mais de ${anosExperiencia} anos de experiência criando aplicativos para iOS e Android. Minha paixão é transformar ideias complexas em soluções mobile elegantes e funcionais.\n\nEspecializado em React Native, Flutter e desenvolvimento nativo, trabalho com metodologias ágeis e sempre busco as melhores práticas de desenvolvimento para entregar produtos de alta qualidade.\n\nEstou sempre em busca de novos desafios e oportunidades para criar aplicativos que façam a diferença na vida das pessoas.',
                         textAlign: TextAlign.start,
                         style: TextStyle(color: Colors.black),
                       ),
