@@ -100,7 +100,7 @@ class ProjectsList extends StatelessWidget {
         title:
             'Eidara PET Web – Plataforma de gestão para empresas do ramo pet',
         description:
-            'Plataforma web responsiva criada para empresas do setor pet organizarem operações em um único lugar. A solução permite configurar serviços, gerenciar agendamentos e hospedagens, cadastrar funcionários com permissões, registrar produtos e acompanhar relatórios de desempenho. Integrada ao backend em Dart, oferece uma gestão moderna e eficiente para o negócio.',
+            'Plataforma web responsiva criada para empresas do setor pet organizarem operações em um único lugar. A solução permite configurar serviços, gerenciar agendamentos e hospedagens, cadastrar funcionários com permissões, registrar produtos e acompanhar relatórios de desempenho.',
         images: [
           'images/projects/petmais_web/login.png',
           'images/projects/petmais_web/home.png',

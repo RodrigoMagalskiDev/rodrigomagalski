@@ -40575,7 +40575,7 @@ h=r[4]
 g=r[5]
 f=r[6]
 e=r[7]
-for(d=l,q=0;q<64;++q,e=f,f=g,g=h,h=b,i=j,j=k,k=d,d=a){c=(e+(((h>>>6|h<<26)^(h>>>11|h<<21)^(h>>>25|h<<7))>>>0)>>>0)+(((h&g^~h&f)>>>0)+(B.Hf[q]+s[q]>>>0)>>>0)>>>0
+for(d=l,q=0;q<64;++q,e=f,f=g,g=h,h=b,i=j,j=k,k=d,d=a){c=(e+(((h>>>6|h<<26)^(h>>>11|h<<21)^(h>>>25|h<<7))>>>0)>>>0)+(((h&g^~h&f)>>>0)+(B.He[q]+s[q]>>>0)>>>0)>>>0
 b=i+c>>>0
 a=c+((((d>>>2|d<<30)^(d>>>13|d<<19)^(d>>>22|d<<10))>>>0)+((d&k^d&j^k&j)>>>0)>>>0)>>>0}r.$flags&2&&A.an(r)
 r[0]=d+l>>>0
@@ -42266,7 +42266,7 @@ r=A.ms(B.KK,B.e,r==null?1:r)
 r.toString
 q=p.ad(q.gu())
 if(q==null)q=1
-return A.azy(A.ayy(null,B.x,new A.tk(q,B.Hq,new A.cq(B.zR,this.e)),s,1,B.OO),r)}}
+return A.azy(A.ayy(null,B.x,new A.tk(q,B.Hp,new A.cq(B.zR,this.e)),s,1,B.OO),r)}}
 A.Gp.prototype={
 l(){var s=this,r=s.aA$
 if(r!=null)r.H(s.gh5())
@@ -46641,7 +46641,7 @@ A.amW.prototype={
 $2(a,b){return this.a.A$.bV(a,this.b)},
 $S:13}
 A.Px.prototype={
-gB9(){return B.Hd},
+gB9(){return B.Hc},
 Fv(a){var s
 switch(a.a){case 0:s=this.d.b
 break
@@ -49823,7 +49823,7 @@ A.an9.prototype={
 $2(a,b){return this.a.bV(a,b)},
 $S:13}
 A.Qh.prototype={
-gB9(){return B.Hh},
+gB9(){return B.Hg},
 Fv(a){var s,r=this
 switch(a.a){case 0:s=r.d.as
 break
@@ -86137,7 +86137,7 @@ J(a){var s,r,q,p=null,o=t.w,n=A.ay(a,p,o).w.a.a<600?A.ay(a,p,o).w.a.a*0.9:A.ay(a
 o=A.ay(a,p,o).w.a.a<600?B.Eg:B.Ed
 s=A.bI("Projetos",p,p,p,A.U(a).ok.r,B.bd,p)
 r=A.bI("Alguns dos trabalhos desenvolvidos recentemente",p,p,p,p,B.bd,p)
-q=A.a_(new A.a0(B.H8,new A.aav(n,720),t.pF),t.l7)
+q=A.a_(new A.a0(B.Ht,new A.aav(n,720),t.pF),t.l7)
 return A.cd(new A.bx(o,A.dV(A.b([s,r,A.uY(B.kZ,q,B.cv,24,24)],t.p),B.a5,B.U,B.a7,24),p),p,1/0)}}
 A.aav.prototype={
 $1(a){return A.cd(new A.Ab(a.a,a.b,a.c,a.d,a.e,a.f,null),this.b,this.a)},
@@ -90711,39 +90711,11 @@ B.aK=new A.kU(4,"start")
 B.kH=new A.kU(5,"end")
 B.H4=A.b(s([B.eR,B.kG,B.bd,B.hO,B.aK,B.kH]),A.ao("z<kU>"))
 B.H6=A.b(s([B.il,B.im]),A.ao("z<wU>"))
-B.Gn=A.b(s(["images/projects/comparai/image_1.png","images/projects/comparai/image_2.png","images/projects/comparai/image_3.png","images/projects/comparai/image_4.png"]),t.s)
-B.H9=A.b(s(["Flutter","Dart","Supabase"]),t.s)
-B.Mc=new A.f4("Compara\xed - App de Compras","Aplicativo para cria\xe7\xe3o e organiza\xe7\xe3o de listas de compras de supermercado, com uso offline e compara\xe7\xe3o de pre\xe7os entre estabelecimentos. O Compara\xed oferece uma base ampla de produtos, compartilhamento de listas e hist\xf3rico de compras, entregando uma experi\xeancia simples, fluida e pensada para tornar as compras do dia a dia mais pr\xe1ticas.",B.Gn,B.H9,"Ver na loja","https://play.google.com/store/apps/details?id=br.com.rodrigomagalskidev.comparai")
-B.I6=A.b(s(["images/projects/eidara_fit_app/login.png","images/projects/eidara_fit_app/contratos.png","images/projects/eidara_fit_app/profile.png","images/projects/eidara_fit_app/treino.png","images/projects/eidara_fit_app/aulas.png"]),t.s)
-B.Ha=A.b(s(["Flutter","Firebase","GraphQL","Instagram"]),t.s)
-B.Mf=new A.f4("Eidara FIT \u2013 App para gest\xe3o de treinos e servi\xe7os da academia","Aplicativo mobile criado para aproximar alunos da academia e centralizar a rotina de treinos e servi\xe7os. O Eidara FIT permite visualizar treinos, acompanhar evolu\xe7\xe3o, agendar aulas ou servi\xe7os personalizados e adquirir pacotes pelo app. Tamb\xe9m conta com integra\xe7\xe3o com redes sociais, oferecendo uma navega\xe7\xe3o intuitiva e alinhada ao dia a dia da academia.",B.I6,B.Ha,"Ver na loja","https://play.google.com/store/apps/details?id=br.com.eidara.eidarafit")
-B.I4=A.b(s(["images/projects/eidara_fit_web/agenda.png","images/projects/eidara_fit_web/treino.png","images/projects/eidara_fit_web/relatorios.png","images/projects/eidara_fit_web/usuarios.png","images/projects/eidara_fit_web/logs.png","images/projects/eidara_fit_web/avaliacao_fisica.png","images/projects/eidara_fit_web/vendas.png"]),t.s)
-B.Gk=A.b(s(["Angular","Typescript","GraphQL","Firebase"]),t.s)
-B.Mk=new A.f4("Eidara FIT Web \u2013 Plataforma completa de gest\xe3o para academias e studios","Sistema web desenvolvido para centralizar a administra\xe7\xe3o de academias e studios. A plataforma permite gerenciar clientes, funcion\xe1rios, permiss\xf5es, treinos, aulas, servi\xe7os personalizados, avalia\xe7\xf5es f\xedsicas, vendas, pacotes e contratos. Tamb\xe9m inclui promo\xe7\xf5es e integra\xe7\xe3o com catracas, entregando uma opera\xe7\xe3o mais organizada, segura e eficiente para o ambiente fitness.",B.I4,B.Gk,null,null)
-B.H7=A.b(s(["images/projects/petmais_app/login_app.png","images/projects/petmais_app/home_app.png","images/projects/petmais_app/supplier_app.png","images/projects/petmais_app/schedules_app.png","images/projects/petmais_app/pet_app.png","images/projects/petmais_app/profile_app.png","images/projects/petmais_app/vaccination_app.png"]),t.s)
-B.Hs=A.b(s(["Flutter","Firebase","API REST","Push Notifications","Geolocaliza\xe7\xe3o"]),t.s)
-B.Mh=new A.f4("Eidara PET \u2013 App para tutores de pets","Aplicativo mobile pensado para facilitar a rotina de tutores de pets. O Eidara PET exibe empresas e servi\xe7os pr\xf3ximos, permite agendar atendimentos e hospedagens, acompanhar reservas, controlar a carteira de vacina\xe7\xe3o e cadastrar animais. Tamb\xe9m inclui recursos para pets perdidos ou dispon\xedveis para ado\xe7\xe3o, com notifica\xe7\xf5es personalizadas.",B.H7,B.Hs,"Ver na loja","https://play.google.com/store/apps/details?id=br.com.rodrigomagalskidev.app_pet")
-B.Ho=A.b(s(["images/projects/petmais_web/login.png","images/projects/petmais_web/home.png","images/projects/petmais_web/configs.png","images/projects/petmais_web/schedule.png","images/projects/petmais_web/reports.png","images/projects/petmais_web/servicos.png"]),t.s)
-B.Ie=A.b(s(["Flutter Web","Firebase","API REST","Push Notifications","AWS"]),t.s)
-B.Md=new A.f4("Eidara PET Web \u2013 Plataforma de gest\xe3o para empresas do ramo pet","Plataforma web responsiva criada para empresas do setor pet organizarem opera\xe7\xf5es em um \xfanico lugar. A solu\xe7\xe3o permite configurar servi\xe7os, gerenciar agendamentos e hospedagens, cadastrar funcion\xe1rios com permiss\xf5es, registrar produtos e acompanhar relat\xf3rios de desempenho. Integrada ao backend em Dart, oferece uma gest\xe3o moderna e eficiente para o neg\xf3cio.",B.Ho,B.Ie,"Ver Site","https://eidarapet.eidara.com.br/")
-B.GJ=A.b(s(["images/projects/eidara-ticket/evento.png","images/projects/eidara-ticket/dashboard.png","images/projects/eidara-ticket/clientes.png","images/projects/eidara-ticket/lotes.png","images/projects/eidara-ticket/conferencia.png","images/projects/eidara-ticket/ingresso.png"]),t.s)
-B.Hr=A.b(s(["React","Vite","Supabase","PostgreSQL"]),t.s)
-B.Mi=new A.f4("Eidara Ticket - Sistema de emiss\xe3o e controle de ingressos para eventos","Sistema completo para divulga\xe7\xe3o, venda e controle de ingressos em eventos. O projeto inclui site de vendas, painel administrativo para gest\xe3o de eventos e pr\xe9-vendas, integra\xe7\xe3o com WhatsApp para envio autom\xe1tico dos ingressos e m\xf3dulo de valida\xe7\xe3o na entrada. A solu\xe7\xe3o organiza todo o fluxo, da compra ao acesso do participante.",B.GJ,B.Hr,null,null)
-B.HK=A.b(s(["/images/projects/desconecte/home.png","/images/projects/desconecte/jogos.png","/images/projects/desconecte/item.png","/images/projects/desconecte/item_2.png"]),t.s)
-B.Hb=A.b(s(["Flutter","Firebase","IA"]),t.s)
-B.Mj=new A.f4("Desconecte \u2013 Minijogos offline para conectar pessoas","Aplicativo de minijogos e desafios criado para aproximar casais, duplas e grupos em experi\xeancias r\xe1pidas e offline. O Desconecte oferece categorias variadas, de atividades leves a din\xe2micas competitivas, para encontros, viagens, festas ou momentos em casa. Seu gerador interno de desafios por IA cria jogos personalizados conforme contexto, energia e tempo dispon\xedvel.",B.HK,B.Hb,"Ver na loja","https://play.google.com/store/apps/details?id=br.com.rodrigomagalskidev.desconecte")
-B.He=A.b(s(["images/projects/quiz_faction/image_1.png","images/projects/quiz_faction/image_2.png","images/projects/quiz_faction/image_3.png","images/projects/quiz_faction/image_4.png"]),t.s)
-B.Hc=A.b(s(["Flutter","Firebase","SQLite"]),t.s)
-B.Me=new A.f4("Quiz Faction \u2013 App oficial da Expofred","Aplicativo desenvolvido para a equipe de pesquisa da UFSM-FW coletar dados de frequentadores e expositores da Expofred. O app permite criar e preencher formul\xe1rios personalizados, funciona offline durante as entrevistas e armazena os dados localmente em SQLite. Depois, sincroniza as coletas com o Firebase, garantindo flexibilidade e seguran\xe7a no envio.",B.He,B.Hc,null,null)
-B.Ht=A.b(s(["images/projects/2kfest/login.png","images/projects/2kfest/ingressos.png","images/projects/2kfest/ingressos_vendidos.png","images/projects/2kfest/validacao.png","images/projects/2kfest/venda_ingressos.png"]),t.s)
-B.Il=A.b(s(["Flutter Web","Firebase","Whatsapp","Qr Code","C\xe2mera"]),t.s)
-B.Mg=new A.f4("2K Fest - App de venda e valida\xe7\xe3o de ingressos","Aplicativo em Flutter Web com Firebase para venda e valida\xe7\xe3o de ingressos de um evento beneficente do Rotaract. O sistema permitia que vendedores cadastrados registrassem vendas e enviassem automaticamente ingressos com QR Code pelo WhatsApp. No evento, o app validava os tickets, conferindo autenticidade e evitando reutiliza\xe7\xf5es no acesso.",B.Ht,B.Il,null,null)
-B.H8=A.b(s([B.Mc,B.Mf,B.Mk,B.Mh,B.Md,B.Mi,B.Mj,B.Me,B.Mg]),A.ao("z<f4>"))
 B.b6=new A.jK(0,"label")
 B.aL=new A.jK(1,"avatar")
 B.bH=new A.jK(2,"deleteIcon")
-B.Hd=A.b(s([B.b6,B.aL,B.bH]),A.ao("z<jK>"))
-B.Hf=A.b(s([1116352408,1899447441,3049323471,3921009573,961987163,1508970993,2453635748,2870763221,3624381080,310598401,607225278,1426881987,1925078388,2162078206,2614888103,3248222580,3835390401,4022224774,264347078,604807628,770255983,1249150122,1555081692,1996064986,2554220882,2821834349,2952996808,3210313671,3336571891,3584528711,113926993,338241895,666307205,773529912,1294757372,1396182291,1695183700,1986661051,2177026350,2456956037,2730485921,2820302411,3259730800,3345764771,3516065817,3600352804,4094571909,275423344,430227734,506948616,659060556,883997877,958139571,1322822218,1537002063,1747873779,1955562222,2024104815,2227730452,2361852424,2428436474,2756734187,3204031479,3329325298]),t.t)
+B.Hc=A.b(s([B.b6,B.aL,B.bH]),A.ao("z<jK>"))
+B.He=A.b(s([1116352408,1899447441,3049323471,3921009573,961987163,1508970993,2453635748,2870763221,3624381080,310598401,607225278,1426881987,1925078388,2162078206,2614888103,3248222580,3835390401,4022224774,264347078,604807628,770255983,1249150122,1555081692,1996064986,2554220882,2821834349,2952996808,3210313671,3336571891,3584528711,113926993,338241895,666307205,773529912,1294757372,1396182291,1695183700,1986661051,2177026350,2456956037,2730485921,2820302411,3259730800,3345764771,3516065817,3600352804,4094571909,275423344,430227734,506948616,659060556,883997877,958139571,1322822218,1537002063,1747873779,1955562222,2024104815,2227730452,2361852424,2428436474,2756734187,3204031479,3329325298]),t.t)
 B.au=new A.ed(0,"icon")
 B.aG=new A.ed(1,"input")
 B.a2=new A.ed(2,"label")
@@ -90755,7 +90727,7 @@ B.aB=new A.ed(7,"suffixIcon")
 B.bt=new A.ed(8,"helperError")
 B.bI=new A.ed(9,"counter")
 B.cc=new A.ed(10,"container")
-B.Hh=A.b(s([B.au,B.aG,B.a2,B.aM,B.aN,B.aO,B.a0,B.aB,B.bt,B.bI,B.cc]),A.ao("z<ed>"))
+B.Hg=A.b(s([B.au,B.aG,B.a2,B.aM,B.aN,B.aO,B.a0,B.aB,B.bt,B.bI,B.cc]),A.ao("z<ed>"))
 B.Im=new A.jj("en","US")
 B.nj=A.b(s([B.Im]),t.ss)
 B.W4=new A.la(0,0)
@@ -90765,11 +90737,39 @@ B.W8=new A.la(6,0.11)
 B.W6=new A.la(8,0.12)
 B.W5=new A.la(12,0.14)
 B.nk=A.b(s([B.W4,B.W9,B.W7,B.W8,B.W6,B.W5]),A.ao("z<la>"))
-B.Hp=A.b(s([-1,0,0,1,0,0,-1,0,1,0,0,0,-1,1,0,1,1,1,1,0]),t.n)
+B.Ho=A.b(s([-1,0,0,1,0,0,-1,0,1,0,0,0,-1,1,0,1,1,1,1,0]),t.n)
 B.zN=new A.HR(2,"outer")
 B.m_=new A.y(0.09803921568627451,0,0,0,B.h)
 B.A6=new A.dU(0.2,B.zN,B.m_,B.e,11)
-B.Hq=A.b(s([B.A6]),t.sq)
+B.Hp=A.b(s([B.A6]),t.sq)
+B.Gn=A.b(s(["images/projects/comparai/image_1.png","images/projects/comparai/image_2.png","images/projects/comparai/image_3.png","images/projects/comparai/image_4.png"]),t.s)
+B.H8=A.b(s(["Flutter","Dart","Supabase"]),t.s)
+B.Mc=new A.f4("Compara\xed - App de Compras","Aplicativo para cria\xe7\xe3o e organiza\xe7\xe3o de listas de compras de supermercado, com uso offline e compara\xe7\xe3o de pre\xe7os entre estabelecimentos. O Compara\xed oferece uma base ampla de produtos, compartilhamento de listas e hist\xf3rico de compras, entregando uma experi\xeancia simples, fluida e pensada para tornar as compras do dia a dia mais pr\xe1ticas.",B.Gn,B.H8,"Ver na loja","https://play.google.com/store/apps/details?id=br.com.rodrigomagalskidev.comparai")
+B.I6=A.b(s(["images/projects/eidara_fit_app/login.png","images/projects/eidara_fit_app/contratos.png","images/projects/eidara_fit_app/profile.png","images/projects/eidara_fit_app/treino.png","images/projects/eidara_fit_app/aulas.png"]),t.s)
+B.H9=A.b(s(["Flutter","Firebase","GraphQL","Instagram"]),t.s)
+B.Me=new A.f4("Eidara FIT \u2013 App para gest\xe3o de treinos e servi\xe7os da academia","Aplicativo mobile criado para aproximar alunos da academia e centralizar a rotina de treinos e servi\xe7os. O Eidara FIT permite visualizar treinos, acompanhar evolu\xe7\xe3o, agendar aulas ou servi\xe7os personalizados e adquirir pacotes pelo app. Tamb\xe9m conta com integra\xe7\xe3o com redes sociais, oferecendo uma navega\xe7\xe3o intuitiva e alinhada ao dia a dia da academia.",B.I6,B.H9,"Ver na loja","https://play.google.com/store/apps/details?id=br.com.eidara.eidarafit")
+B.I4=A.b(s(["images/projects/eidara_fit_web/agenda.png","images/projects/eidara_fit_web/treino.png","images/projects/eidara_fit_web/relatorios.png","images/projects/eidara_fit_web/usuarios.png","images/projects/eidara_fit_web/logs.png","images/projects/eidara_fit_web/avaliacao_fisica.png","images/projects/eidara_fit_web/vendas.png"]),t.s)
+B.Gk=A.b(s(["Angular","Typescript","GraphQL","Firebase"]),t.s)
+B.Mk=new A.f4("Eidara FIT Web \u2013 Plataforma completa de gest\xe3o para academias e studios","Sistema web desenvolvido para centralizar a administra\xe7\xe3o de academias e studios. A plataforma permite gerenciar clientes, funcion\xe1rios, permiss\xf5es, treinos, aulas, servi\xe7os personalizados, avalia\xe7\xf5es f\xedsicas, vendas, pacotes e contratos. Tamb\xe9m inclui promo\xe7\xf5es e integra\xe7\xe3o com catracas, entregando uma opera\xe7\xe3o mais organizada, segura e eficiente para o ambiente fitness.",B.I4,B.Gk,null,null)
+B.H7=A.b(s(["images/projects/petmais_app/login_app.png","images/projects/petmais_app/home_app.png","images/projects/petmais_app/supplier_app.png","images/projects/petmais_app/schedules_app.png","images/projects/petmais_app/pet_app.png","images/projects/petmais_app/profile_app.png","images/projects/petmais_app/vaccination_app.png"]),t.s)
+B.Hr=A.b(s(["Flutter","Firebase","API REST","Push Notifications","Geolocaliza\xe7\xe3o"]),t.s)
+B.Mh=new A.f4("Eidara PET \u2013 App para tutores de pets","Aplicativo mobile pensado para facilitar a rotina de tutores de pets. O Eidara PET exibe empresas e servi\xe7os pr\xf3ximos, permite agendar atendimentos e hospedagens, acompanhar reservas, controlar a carteira de vacina\xe7\xe3o e cadastrar animais. Tamb\xe9m inclui recursos para pets perdidos ou dispon\xedveis para ado\xe7\xe3o, com notifica\xe7\xf5es personalizadas.",B.H7,B.Hr,"Ver na loja","https://play.google.com/store/apps/details?id=br.com.rodrigomagalskidev.app_pet")
+B.Hn=A.b(s(["images/projects/petmais_web/login.png","images/projects/petmais_web/home.png","images/projects/petmais_web/configs.png","images/projects/petmais_web/schedule.png","images/projects/petmais_web/reports.png","images/projects/petmais_web/servicos.png"]),t.s)
+B.Ie=A.b(s(["Flutter Web","Firebase","API REST","Push Notifications","AWS"]),t.s)
+B.Mg=new A.f4("Eidara PET Web \u2013 Plataforma de gest\xe3o para empresas do ramo pet","Plataforma web responsiva criada para empresas do setor pet organizarem opera\xe7\xf5es em um \xfanico lugar. A solu\xe7\xe3o permite configurar servi\xe7os, gerenciar agendamentos e hospedagens, cadastrar funcion\xe1rios com permiss\xf5es, registrar produtos e acompanhar relat\xf3rios de desempenho.",B.Hn,B.Ie,"Ver Site","https://eidarapet.eidara.com.br/")
+B.GJ=A.b(s(["images/projects/eidara-ticket/evento.png","images/projects/eidara-ticket/dashboard.png","images/projects/eidara-ticket/clientes.png","images/projects/eidara-ticket/lotes.png","images/projects/eidara-ticket/conferencia.png","images/projects/eidara-ticket/ingresso.png"]),t.s)
+B.Hq=A.b(s(["React","Vite","Supabase","PostgreSQL"]),t.s)
+B.Mi=new A.f4("Eidara Ticket - Sistema de emiss\xe3o e controle de ingressos para eventos","Sistema completo para divulga\xe7\xe3o, venda e controle de ingressos em eventos. O projeto inclui site de vendas, painel administrativo para gest\xe3o de eventos e pr\xe9-vendas, integra\xe7\xe3o com WhatsApp para envio autom\xe1tico dos ingressos e m\xf3dulo de valida\xe7\xe3o na entrada. A solu\xe7\xe3o organiza todo o fluxo, da compra ao acesso do participante.",B.GJ,B.Hq,null,null)
+B.HK=A.b(s(["/images/projects/desconecte/home.png","/images/projects/desconecte/jogos.png","/images/projects/desconecte/item.png","/images/projects/desconecte/item_2.png"]),t.s)
+B.Ha=A.b(s(["Flutter","Firebase","IA"]),t.s)
+B.Mj=new A.f4("Desconecte \u2013 Minijogos offline para conectar pessoas","Aplicativo de minijogos e desafios criado para aproximar casais, duplas e grupos em experi\xeancias r\xe1pidas e offline. O Desconecte oferece categorias variadas, de atividades leves a din\xe2micas competitivas, para encontros, viagens, festas ou momentos em casa. Seu gerador interno de desafios por IA cria jogos personalizados conforme contexto, energia e tempo dispon\xedvel.",B.HK,B.Ha,"Ver na loja","https://play.google.com/store/apps/details?id=br.com.rodrigomagalskidev.desconecte")
+B.Hd=A.b(s(["images/projects/quiz_faction/image_1.png","images/projects/quiz_faction/image_2.png","images/projects/quiz_faction/image_3.png","images/projects/quiz_faction/image_4.png"]),t.s)
+B.Hb=A.b(s(["Flutter","Firebase","SQLite"]),t.s)
+B.Md=new A.f4("Quiz Faction \u2013 App oficial da Expofred","Aplicativo desenvolvido para a equipe de pesquisa da UFSM-FW coletar dados de frequentadores e expositores da Expofred. O app permite criar e preencher formul\xe1rios personalizados, funciona offline durante as entrevistas e armazena os dados localmente em SQLite. Depois, sincroniza as coletas com o Firebase, garantindo flexibilidade e seguran\xe7a no envio.",B.Hd,B.Hb,null,null)
+B.Hs=A.b(s(["images/projects/2kfest/login.png","images/projects/2kfest/ingressos.png","images/projects/2kfest/ingressos_vendidos.png","images/projects/2kfest/validacao.png","images/projects/2kfest/venda_ingressos.png"]),t.s)
+B.Il=A.b(s(["Flutter Web","Firebase","Whatsapp","Qr Code","C\xe2mera"]),t.s)
+B.Mf=new A.f4("2K Fest - App de venda e valida\xe7\xe3o de ingressos","Aplicativo em Flutter Web com Firebase para venda e valida\xe7\xe3o de ingressos de um evento beneficente do Rotaract. O sistema permitia que vendedores cadastrados registrassem vendas e enviassem automaticamente ingressos com QR Code pelo WhatsApp. No evento, o app validava os tickets, conferindo autenticidade e evitando reutiliza\xe7\xf5es no acesso.",B.Hs,B.Il,null,null)
+B.Ht=A.b(s([B.Mc,B.Me,B.Mk,B.Mh,B.Mg,B.Mi,B.Mj,B.Md,B.Mf]),A.ao("z<f4>"))
 B.Pm=new A.BF(0,"left")
 B.Pn=new A.BF(1,"right")
 B.Hu=A.b(s([B.Pm,B.Pn]),A.ao("z<BF>"))
@@ -91407,7 +91407,7 @@ B.Hz=A.b(s([8589934850,8589934850,8589934851,null]),t.Z)
 B.to=new A.d0(["*",B.GB,"+",B.GC,"-",B.GD,".",B.GE,"/",B.GF,"0",B.GG,"1",B.GH,"2",B.GK,"3",B.GM,"4",B.GN,"5",B.GO,"6",B.GP,"7",B.GQ,"8",B.GR,"9",B.GT,"Alt",B.Hw,"AltGraph",B.Gq,"ArrowDown",B.Gr,"ArrowLeft",B.Gs,"ArrowRight",B.Gt,"ArrowUp",B.Gu,"Clear",B.Gz,"Control",B.Hx,"Delete",B.Gp,"End",B.Gv,"Enter",B.Go,"Home",B.Gw,"Insert",B.GA,"Meta",B.Hy,"PageDown",B.Gx,"PageUp",B.Gy,"Shift",B.Hz],A.ao("d0<m,R<o?>>"))
 B.GS=A.b(s([B.nv,null,null,B.tb]),t.L)
 B.I1=A.b(s([B.rY,null,null,B.tc]),t.L)
-B.Hg=A.b(s([B.rZ,null,null,B.td]),t.L)
+B.Hf=A.b(s([B.rZ,null,null,B.td]),t.L)
 B.HB=A.b(s([B.t_,null,null,B.cL]),t.L)
 B.Gh=A.b(s([B.t0,null,null,B.te]),t.L)
 B.If=A.b(s([B.t1,null,null,B.jT]),t.L)
@@ -91422,22 +91422,22 @@ B.I2=A.b(s([B.t9,null,null,B.cP]),t.L)
 B.I3=A.b(s([B.ta,null,null,B.eA]),t.L)
 B.GZ=A.b(s([B.ev,B.ev,B.h9,null]),t.L)
 B.Ig=A.b(s([B.h5,null,B.h5,null]),t.L)
-B.Hi=A.b(s([B.bB,null,null,B.cM]),t.L)
-B.Hj=A.b(s([B.bn,null,null,B.cN]),t.L)
-B.Hk=A.b(s([B.bo,null,null,B.cO]),t.L)
+B.Hh=A.b(s([B.bB,null,null,B.cM]),t.L)
+B.Hi=A.b(s([B.bn,null,null,B.cN]),t.L)
+B.Hj=A.b(s([B.bo,null,null,B.cO]),t.L)
 B.Ii=A.b(s([B.bC,null,null,B.cP]),t.L)
 B.I7=A.b(s([B.jM,null,null,B.jU]),t.L)
 B.H_=A.b(s([B.eu,B.eu,B.h8,null]),t.L)
 B.HG=A.b(s([B.aD,null,null,B.cL]),t.L)
-B.Hl=A.b(s([B.cI,null,null,B.ex]),t.L)
+B.Hk=A.b(s([B.cI,null,null,B.ex]),t.L)
 B.GV=A.b(s([B.h4,null,null,B.jS]),t.L)
-B.Hm=A.b(s([B.cJ,null,null,B.ez]),t.L)
+B.Hl=A.b(s([B.cJ,null,null,B.ez]),t.L)
 B.I8=A.b(s([B.jN,null,null,B.jT]),t.L)
 B.H0=A.b(s([B.ew,B.ew,B.ha,null]),t.L)
-B.Hn=A.b(s([B.es,null,null,B.ey]),t.L)
+B.Hm=A.b(s([B.es,null,null,B.ey]),t.L)
 B.HL=A.b(s([B.et,null,null,B.eA]),t.L)
 B.H1=A.b(s([B.cp,B.cp,B.cK,null]),t.L)
-B.K3=new A.d0(["*",B.GS,"+",B.I1,"-",B.Hg,".",B.HB,"/",B.Gh,"0",B.If,"1",B.Ia,"2",B.GY,"3",B.Ij,"4",B.I9,"5",B.GW,"6",B.Gm,"7",B.H5,"8",B.I2,"9",B.I3,"Alt",B.GZ,"AltGraph",B.Ig,"ArrowDown",B.Hi,"ArrowLeft",B.Hj,"ArrowRight",B.Hk,"ArrowUp",B.Ii,"Clear",B.I7,"Control",B.H_,"Delete",B.HG,"End",B.Hl,"Enter",B.GV,"Home",B.Hm,"Insert",B.I8,"Meta",B.H0,"PageDown",B.Hn,"PageUp",B.HL,"Shift",B.H1],A.ao("d0<m,R<e?>>"))
+B.K3=new A.d0(["*",B.GS,"+",B.I1,"-",B.Hf,".",B.HB,"/",B.Gh,"0",B.If,"1",B.Ia,"2",B.GY,"3",B.Ij,"4",B.I9,"5",B.GW,"6",B.Gm,"7",B.H5,"8",B.I2,"9",B.I3,"Alt",B.GZ,"AltGraph",B.Ig,"ArrowDown",B.Hh,"ArrowLeft",B.Hi,"ArrowRight",B.Hj,"ArrowUp",B.Ii,"Clear",B.I7,"Control",B.H_,"Delete",B.HG,"End",B.Hk,"Enter",B.GV,"Home",B.Hl,"Insert",B.I8,"Meta",B.H0,"PageDown",B.Hm,"PageUp",B.HL,"Shift",B.H1],A.ao("d0<m,R<e?>>"))
 B.KB={KeyA:0,KeyB:1,KeyC:2,KeyD:3,KeyE:4,KeyF:5,KeyG:6,KeyH:7,KeyI:8,KeyJ:9,KeyK:10,KeyL:11,KeyM:12,KeyN:13,KeyO:14,KeyP:15,KeyQ:16,KeyR:17,KeyS:18,KeyT:19,KeyU:20,KeyV:21,KeyW:22,KeyX:23,KeyY:24,KeyZ:25,Digit1:26,Digit2:27,Digit3:28,Digit4:29,Digit5:30,Digit6:31,Digit7:32,Digit8:33,Digit9:34,Digit0:35,Minus:36,Equal:37,BracketLeft:38,BracketRight:39,Backslash:40,Semicolon:41,Quote:42,Backquote:43,Comma:44,Period:45,Slash:46}
 B.tp=new A.bE(B.KB,["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","1","2","3","4","5","6","7","8","9","0","-","=","[","]","\\",";","'","`",",",".","/"],t.li)
 B.Kx={Abort:0,Again:1,AltLeft:2,AltRight:3,ArrowDown:4,ArrowLeft:5,ArrowRight:6,ArrowUp:7,AudioVolumeDown:8,AudioVolumeMute:9,AudioVolumeUp:10,Backquote:11,Backslash:12,Backspace:13,BracketLeft:14,BracketRight:15,BrightnessDown:16,BrightnessUp:17,BrowserBack:18,BrowserFavorites:19,BrowserForward:20,BrowserHome:21,BrowserRefresh:22,BrowserSearch:23,BrowserStop:24,CapsLock:25,Comma:26,ContextMenu:27,ControlLeft:28,ControlRight:29,Convert:30,Copy:31,Cut:32,Delete:33,Digit0:34,Digit1:35,Digit2:36,Digit3:37,Digit4:38,Digit5:39,Digit6:40,Digit7:41,Digit8:42,Digit9:43,DisplayToggleIntExt:44,Eject:45,End:46,Enter:47,Equal:48,Escape:49,Esc:50,F1:51,F10:52,F11:53,F12:54,F13:55,F14:56,F15:57,F16:58,F17:59,F18:60,F19:61,F2:62,F20:63,F21:64,F22:65,F23:66,F24:67,F3:68,F4:69,F5:70,F6:71,F7:72,F8:73,F9:74,Find:75,Fn:76,FnLock:77,GameButton1:78,GameButton10:79,GameButton11:80,GameButton12:81,GameButton13:82,GameButton14:83,GameButton15:84,GameButton16:85,GameButton2:86,GameButton3:87,GameButton4:88,GameButton5:89,GameButton6:90,GameButton7:91,GameButton8:92,GameButton9:93,GameButtonA:94,GameButtonB:95,GameButtonC:96,GameButtonLeft1:97,GameButtonLeft2:98,GameButtonMode:99,GameButtonRight1:100,GameButtonRight2:101,GameButtonSelect:102,GameButtonStart:103,GameButtonThumbLeft:104,GameButtonThumbRight:105,GameButtonX:106,GameButtonY:107,GameButtonZ:108,Help:109,Home:110,Hyper:111,Insert:112,IntlBackslash:113,IntlRo:114,IntlYen:115,KanaMode:116,KeyA:117,KeyB:118,KeyC:119,KeyD:120,KeyE:121,KeyF:122,KeyG:123,KeyH:124,KeyI:125,KeyJ:126,KeyK:127,KeyL:128,KeyM:129,KeyN:130,KeyO:131,KeyP:132,KeyQ:133,KeyR:134,KeyS:135,KeyT:136,KeyU:137,KeyV:138,KeyW:139,KeyX:140,KeyY:141,KeyZ:142,KeyboardLayoutSelect:143,Lang1:144,Lang2:145,Lang3:146,Lang4:147,Lang5:148,LaunchApp1:149,LaunchApp2:150,LaunchAssistant:151,LaunchControlPanel:152,LaunchMail:153,LaunchScreenSaver:154,MailForward:155,MailReply:156,MailSend:157,MediaFastForward:158,MediaPause:159,MediaPlay:160,MediaPlayPause:161,MediaRecord:162,MediaRewind:163,MediaSelect:164,MediaStop:165,MediaTrackNext:166,MediaTrackPrevious:167,MetaLeft:168,MetaRight:169,MicrophoneMuteToggle:170,Minus:171,NonConvert:172,NumLock:173,Numpad0:174,Numpad1:175,Numpad2:176,Numpad3:177,Numpad4:178,Numpad5:179,Numpad6:180,Numpad7:181,Numpad8:182,Numpad9:183,NumpadAdd:184,NumpadBackspace:185,NumpadClear:186,NumpadClearEntry:187,NumpadComma:188,NumpadDecimal:189,NumpadDivide:190,NumpadEnter:191,NumpadEqual:192,NumpadMemoryAdd:193,NumpadMemoryClear:194,NumpadMemoryRecall:195,NumpadMemoryStore:196,NumpadMemorySubtract:197,NumpadMultiply:198,NumpadParenLeft:199,NumpadParenRight:200,NumpadSubtract:201,Open:202,PageDown:203,PageUp:204,Paste:205,Pause:206,Period:207,Power:208,PrintScreen:209,PrivacyScreenToggle:210,Props:211,Quote:212,Resume:213,ScrollLock:214,Select:215,SelectTask:216,Semicolon:217,ShiftLeft:218,ShiftRight:219,ShowAllWindows:220,Slash:221,Sleep:222,Space:223,Super:224,Suspend:225,Tab:226,Turbo:227,Undo:228,WakeUp:229,ZoomToggle:230}
@@ -93000,7 +93000,7 @@ return q})
 r($,"aVw","aES",()=>A.ef().gUa()+"roboto/v32/KFOmCnqEu92Fr1Me4GZLCzYlKw.woff2")
 r($,"aUT","avk",()=>A.aNz(A.wa(A.wa(A.iQ(),"window"),"FinalizationRegistry"),A.fK(new A.aqi())))
 r($,"aWh","avA",()=>new A.a9c())
-s($,"aV_","aEs",()=>A.aJ1(B.Hp))
+s($,"aV_","aEs",()=>A.aJ1(B.Ho))
 s($,"aUZ","as1",()=>A.a5S(A.aGg($.aEs())))
 s($,"aUM","aEm",()=>A.az0(A.B(A.ai(),"ParagraphBuilder")))
 s($,"aWr","aFm",()=>{var q=t.N,p=A.ao("+breaks,graphemes,words(uK,uK,uK)"),o=A.atf(1e5,q,p),n=A.atf(1e4,q,p)
